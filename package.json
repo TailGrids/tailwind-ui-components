@@ -1,0 +1,14 @@
+{
+  "name": "tailgrids-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^3.0.1"
+  }
+}

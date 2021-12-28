@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs | TailGrids</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.5.1/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- ====== Tabs Section Start -->
+    <section class="py-20 lg:py-[120px]">
+      <div class="container">
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full px-4">
+            <div
+              x-data="
+                {
+                  openTab: 1,
+                  activeClasses: 'bg-primary text-white',
+                  inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
+                }
+              "
+              class="w-full mb-14"
+            >
+              <div
+                class="
+                  flex flex-wrap
+                  rounded-lg
+                  py-3
+                  px-4
+                  border border-[#E4E4E4]
+                "
+              >
+                <a
+                  href="javascript:void(0)"
+                  @click="openTab = 1"
+                  :class="openTab === 1 ? activeClasses : inactiveClasses"
+                  class="
+                    text-sm
+                    md:text-base
+                    font-medium
+                    rounded-md
+                    py-3
+                    px-4
+                    lg:px-6
+                  "
+                >
+                  Home
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  @click="openTab = 2"
+                  :class="openTab === 2 ? activeClasses : inactiveClasses"
+                  class="
+                    text-sm
+                    md:text-base
+                    font-medium
+                    rounded-md
+                    py-3
+                    px-4
+                    lg:px-6
+                  "
+                >
+                  About Us
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  @click="openTab = 3"
+                  :class="openTab === 3 ? activeClasses : inactiveClasses"
+                  class="
+                    text-sm
+                    md:text-base
+                    font-medium
+                    rounded-md
+                    py-3
+                    px-4
+                    lg:px-6
+                  "
+                >
+                  Our Team
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  @click="openTab = 4"
+                  :class="openTab === 4 ? activeClasses : inactiveClasses"
+                  class="
+                    text-sm
+                    md:text-base
+                    font-medium
+                    rounded-md
+                    py-3
+                    px-4
+                    lg:px-6
+                  "
+                >
+                  Company Details
+                </a>
+              </div>
+              <div>
+                <div
+                  x-show="openTab === 1"
+                  class="text-body-color text-base leading-relaxed p-6"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia nisi, doloribus nulla cumque molestias corporis eaque
+                  harum vero! Quas sit odit optio debitis nulla quisquam,
+                  dolorum quaerat animi iusto quod.
+                </div>
+                <div
+                  x-show="openTab === 2"
+                  class="text-body-color text-base leading-relaxed p-6"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia nisi, doloribus nulla cumque molestias corporis eaque
+                  harum vero! Quas sit odit optio debitis nulla quisquam,
+                  dolorum quaerat animi iusto quod. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Unde ex dolorum voluptate
+                  cupiditate adipisci doloremque, vel quam praesentium nihil
+                  veritatis.
+                </div>
+                <div
+                  x-show="openTab === 3"
+                  class="text-body-color text-base leading-relaxed p-6"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia nisi, doloribus nulla cumque molestias corporis eaque
+                  harum vero! Quas sit odit optio debitis nulla quisquam,
+                  dolorum quaerat animi iusto quod. <br />
+                  <br />
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Suscipit mollitia nam eligendi reprehenderit reiciendis saepe
+                  laboriosam maiores voluptas. Quo, culpa amet fugiat ipsam sed
+                  quod hic, veritatis ducimus recusandae repellat quasi eaque,
+                  suscipit praesentium totam?
+                </div>
+                <div
+                  x-show="openTab === 4"
+                  class="text-body-color text-base leading-relaxed p-6"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officia nisi, doloribus nulla cumque molestias corporis eaque
+                  harum vero! Quas sit odit optio debitis nulla quisquam,
+                  dolorum quaerat animi iusto quod.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Tabs Section End -->
+  </body>
+</html>
