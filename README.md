@@ -1,5 +1,5 @@
 # Free Tailwind CSS UI Components by TailGrids
-TailGrids is the library of free and premium UI components and blocks. Crafted for - modern websites, landing pages and web apps. Comes with a consistent design system, copy-paste tool and everything you can expect from a top-notch UI library.
+TailGrids is the library of high-quality Tailwind CSS UI components and blocks. Crafted for - modern websites, landing pages and web apps. Comes with a consistent design system, copy-paste tool and everything you can expect from a top-notch UI library.
 
 The free core version comes with a good number of free UI components along with all core components. Feel free to use it with your personal or commercial projects, and don't forget to support and inspire our team by starring this repo.
 
