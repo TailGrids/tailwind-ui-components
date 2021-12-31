@@ -14,7 +14,7 @@ You can always support this project and inspire us by [Starring🌟 This Reposit
 and sharing with friends. If you like the the library consider purchasing the [Pro version](https://tailgrids.com/pricing)
 
 ## 🎁 License
-TailGrids Core Version is 100% Free! and open-source you can use it with your personal or commercial projects without any attribution or backlink.
+TailGrids Core Version is 100% Free! and open-source you can use it with your personal or commercial projects.
 
 ## UI Components
 [![sneak-peek](https://cdn.tailgrids.com/tailgrids-components.svg)](https://tailgrids.com/components)
