@@ -477,6 +477,127 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.snap{
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap::-webkit-scrollbar{
+  display: none;
+}
+
+.snap > img{
+  scroll-snap-align: center;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+.navbarTogglerActive > span:nth-child(1){
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+.navbarTogglerActive > span:nth-child(2){
+  opacity: 0;
+}
+
+.navbarTogglerActive > span:nth-child(3){
+  top: -8px;
+  transform: rotate(135deg);
+}
+
+input:checked ~ .dot{
+  background: #3056D3;
+  transform: translateX(100%);
+}
+
+input:checked ~ .dot .active{
+  display: block;
+}
+
+input:checked ~ .dot .inactive{
+  display: none;
+}
+
+input#toggleFour:checked ~ .box{
+  background: #3056D3;
+}
+
+input#toggleFour:checked ~ .dot{
+  background: #fff;
+  transform: translateX(100%);
+}
+
+input#toggleFive:checked ~ .dot{
+  background: #fff;
+  transform: translateX(100%);
+}
+
+input#toggleFive:checked ~ .dot > span{
+  background: #3056D3;
+}
+
+input#toggleSix:checked ~ .dot{
+  background: #fff;
+  transform: translateX(100%);
+}
+
+input#toggleEight:checked ~ .box{
+  background: #EAEEFB;
+}
+
+input#toggleEight:checked ~ .dot{
+  background: #3056D3;
+}
+
+input#toggleEight:checked ~ .dot span{
+  background: #3056D3;
+  border-color: #fff;
+}
+
+input#toggleNine:checked ~ .dot span {
+  background: #fff;
+}
+
+input#toggleNine:checked ~ .dot{
+  background: #3056D3;
+}
+
+input:checked ~ .box{
+  border-color: #3056D3;
+}
+
+input#checkboxLabelOne:checked ~ .box{
+  border-color: #3056D3;
+}
+
+input#checkboxLabelOne:checked ~ .box .dot{
+  background: #3056D3;
+}
+
+input#checkboxLabelTwo:checked ~ .box span{
+  opacity: 100%;
+}
+
+input#checkboxLabelThree:checked ~ .box span{
+  opacity: 100%;
+}
+
+input#checkboxLabelFour:checked ~ .box{
+  border-color: #3056D3;
+}
+
+input#checkboxLabelFour:checked ~ .box span{
+  background: #3056D3;
+}
+
+input#checkboxLabelFive:checked ~ .box{
+  background: #3056D3;
+}
+
 .container{
   width: 100%;
   margin-right: auto;
