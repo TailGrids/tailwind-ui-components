@@ -9,7 +9,7 @@
   "author": "TailGrids Team <hello@tailgrids.com> (https://tailgrids.com/)",
   "license": "MIT",
   "homepage": "https://tailgrids.com/",
-  "description": "Open-source library of Tailwind CSS components and interactive elements.",
+  "description": "Handcrafted Library of Tailwind CSS UI Components & Blocks.",
   "bugs": "https://github.com/TailGrids/tailwind-ui-components/issues",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
