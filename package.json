@@ -3,6 +3,14 @@
   "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
+  "keywords": [
+    "component-library", "ui-components", "tailwind", "tailwindcss", "tailwind-css", "alpinejs", "tailwindui", "tailwind-ui", "tailwind-blocks", "css", "html", "template", "components", "ui", "landing-page", "blocks", "free", "tailgrids", "tailwind-ui", "tailwind-css-sections"
+  ],
+  "author": "TailGrids Team <hello@tailgrids.com> (https://tailgrids.com/)",
+  "license": "MIT",
+  "homepage": "https://tailgrids.com/",
+  "description": "Open-source library of Tailwind CSS components and interactive elements.",
+  "bugs": "https://github.com/TailGrids/tailwind-ui-components/issues",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
   },
@@ -10,14 +18,6 @@
     "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
     "tailwindcss": "^3.0.1"
-  },
-  "keywords": [
-    "component-library", "ui-components", "tailwind", "tailwindcss", "tailwind-css", "alpinejs", "tailwindui", "tailwind-ui", "tailwind-blocks", "css", "html", "template", "components", "ui", "landing-page", "blocks", "free", "tailgrids", "tailwind-ui", "tailwind-css-sections"
-  ],
-  "author": "TailGrids Team <hello@tailgrids.com> (https://tailgrids.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TailGrids/tailwind-ui-components/issues"
-  },
-  "homepage": "https://tailgrids.com/"
+  }
+
 }
