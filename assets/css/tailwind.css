@@ -441,7 +441,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-.border, .border-\[\.5px\], .border-\[1\.5px\], .border-y, .border-l-\[6px\], .border-r-2, .border-b-2, .border-b, .border-l, .border-r, .file\:border-0::file-selector-button, .file\:border-r::file-selector-button{
+.border, .border-\[\.5px\], .border-\[1\.5px\], .border-y, .border-l-\[6px\], .border-r-2, .border-b-2, .border-b, .border-l, .border-r, .border-t, .file\:border-0::file-selector-button, .file\:border-r::file-selector-button{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -836,6 +836,18 @@ input#checkboxLabelFive:checked ~ .box{
 
 .right-\[-3px\]{
   right: -3px;
+}
+
+.-bottom-1{
+  bottom: -0.25rem;
+}
+
+.-left-1{
+  left: -0.25rem;
+}
+
+.-right-1{
+  right: -0.25rem;
 }
 
 .left-4{
@@ -1526,6 +1538,16 @@ input#checkboxLabelFive:checked ~ .box{
   border-bottom-right-radius: 9999px;
 }
 
+.rounded-l-sm{
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-r-sm{
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1565,6 +1587,10 @@ input#checkboxLabelFive:checked ~ .box{
 
 .border-r{
   border-right-width: 1px;
+}
+
+.border-t{
+  border-top-width: 1px;
 }
 
 .border-white{
