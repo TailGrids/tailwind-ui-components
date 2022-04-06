@@ -33,7 +33,7 @@ body {
 }
 
 input:checked ~ .dot {
-  @apply bg-primary translate-x-full;
+  @apply translate-x-full bg-primary;
 }
 
 input:checked ~ .dot .active {
@@ -52,14 +52,14 @@ input#toggleFour:checked ~ .dot {
 }
 
 input#toggleFive:checked ~ .dot {
-  @apply bg-white translate-x-full;
+  @apply translate-x-full bg-white;
 }
 input#toggleFive:checked ~ .dot span {
   @apply bg-primary;
 }
 
 input#toggleSix:checked ~ .dot {
-  @apply bg-white translate-x-full;
+  @apply translate-x-full bg-white;
 }
 
 input#toggleEight:checked ~ .box {
