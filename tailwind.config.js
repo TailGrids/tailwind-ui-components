@@ -4,5 +4,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("./plugin")],
+  plugins: [require("tailgrids/plugin")],
 };
