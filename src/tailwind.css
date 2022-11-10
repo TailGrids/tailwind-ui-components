@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Inter", sans-serif;
+}
 .snap {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -17,19 +20,16 @@
   scroll-snap-align: center;
 }
 
-body {
-  font-family: "Inter", sans-serif;
+.navbarTogglerActive > span:nth-child(1) {
+  @apply top-[7px] rotate-45;
 }
 
-.navbarTogglerActive > span:nth-child(1) {
-  @apply top-[7px];
-  transform: rotate(45deg);
-}
 .navbarTogglerActive > span:nth-child(2) {
   @apply opacity-0;
 }
+
 .navbarTogglerActive > span:nth-child(3) {
-  @apply top-[-8px] rotate-[135deg];
+  @apply -top-2 rotate-[135deg];
 }
 
 input:checked ~ .dot {
@@ -47,6 +47,7 @@ input:checked ~ .dot .inactive {
 input#toggleFour:checked ~ .box {
   @apply bg-primary;
 }
+
 input#toggleFour:checked ~ .dot {
   @apply translate-x-full bg-white;
 }
@@ -54,7 +55,8 @@ input#toggleFour:checked ~ .dot {
 input#toggleFive:checked ~ .dot {
   @apply translate-x-full bg-white;
 }
-input#toggleFive:checked ~ .dot span {
+
+input#toggleFive:checked ~ .dot > span {
   @apply bg-primary;
 }
 
@@ -65,9 +67,11 @@ input#toggleSix:checked ~ .dot {
 input#toggleEight:checked ~ .box {
   @apply bg-[#EAEEFB];
 }
+
 input#toggleEight:checked ~ .dot {
   @apply bg-primary;
 }
+
 input#toggleEight:checked ~ .dot span {
   @apply border-white bg-primary;
 }
@@ -75,6 +79,7 @@ input#toggleEight:checked ~ .dot span {
 input#toggleNine:checked ~ .dot span {
   @apply bg-white;
 }
+
 input#toggleNine:checked ~ .dot {
   @apply bg-primary;
 }
@@ -82,9 +87,11 @@ input#toggleNine:checked ~ .dot {
 input:checked ~ .box {
   @apply border-primary;
 }
+
 input#checkboxLabelOne:checked ~ .box {
   @apply border-primary;
 }
+
 input#checkboxLabelOne:checked ~ .box .dot {
   @apply bg-primary;
 }
@@ -100,6 +107,7 @@ input#checkboxLabelThree:checked ~ .box span {
 input#checkboxLabelFour:checked ~ .box {
   @apply border-primary;
 }
+
 input#checkboxLabelFour:checked ~ .box span {
   @apply bg-primary;
 }
@@ -114,4 +122,223 @@ input#checkboxLabelFive:checked ~ .box {
     rgba(255, 255, 255, 0.08) 0%,
     rgba(196, 196, 196, 0) 100%
   );
+}
+
+/* v-2.0 start from here */
+.container {
+  @apply mx-auto px-4;
+}
+input[type="checkbox"]:checked ~ .box span {
+  @apply opacity-100;
+}
+
+input[type="radio"]:checked ~ .box .circle {
+  @apply bg-primary;
+}
+
+input[type="radio"]:checked ~ .box span {
+  @apply opacity-100;
+}
+
+.payment:checked ~ label {
+  @apply border-primary bg-primary bg-opacity-[8%];
+}
+
+.shipping:checked ~ label {
+  @apply border-primary;
+}
+
+.shipping:checked ~ label .title {
+  @apply text-primary;
+}
+
+.color:checked ~ label span {
+  @apply h-2 w-2;
+}
+
+.productColor:checked ~ label span {
+  @apply h-7 w-7;
+}
+
+.productColor2:checked ~ label span {
+  @apply h-3 w-3;
+}
+
+.filter-size:checked ~ label {
+  @apply border-primary bg-primary text-white;
+}
+
+.filter-size-2:checked ~ label {
+  @apply border-primary bg-primary bg-opacity-10;
+}
+
+.ram-size:checked ~ label {
+  @apply border-primary text-primary;
+}
+
+.download-radio:checked ~ label {
+  @apply border-primary bg-primary;
+}
+.download-radio:checked ~ label span {
+  @apply text-white;
+}
+.download-radio:checked ~ label .icon {
+  @apply opacity-100;
+}
+
+/* ============
+=============== */
+
+.priceSlideOne .noUi-target {
+  @apply mt-8 border-none bg-[#f4f7ff] shadow-none;
+}
+
+.priceSlideOne .noUi-connects {
+  @apply h-[6px] rounded-full bg-[#D4D9E8];
+}
+
+.priceSlideOne .noUi-connect {
+  @apply h-[6px] rounded-full bg-primary;
+}
+
+.priceSlideOne .noUi-horizontal .noUi-handle {
+  @apply -top-2 h-[22px] w-[22px] rounded-full border-[6px] border-primary bg-white;
+}
+
+.priceSlideTwo .noUi-target {
+  @apply mt-8 border-none bg-white shadow-none;
+}
+
+.priceSlideTwo .noUi-connects {
+  @apply h-1 rounded-full bg-[#D4D9E8];
+}
+
+.priceSlideTwo .noUi-connect {
+  @apply h-1 rounded-full bg-primary;
+}
+
+.priceSlideTwo .noUi-horizontal .noUi-handle {
+  @apply -top-3 h-[30px] w-[30px] rounded-full border border-primary bg-white;
+}
+
+.noUi-horizontal .noUi-handle:after,
+.noUi-horizontal .noUi-handle:before {
+  @apply hidden;
+}
+
+#activityChart .apexcharts-legend-series {
+  @apply !mr-5;
+}
+
+/* ======= Switch ======= */
+.autoSaverSwitch input:checked ~ .slider {
+  @apply bg-primary;
+}
+.autoSaverSwitch input:checked ~ .slider .dot {
+  @apply translate-x-6;
+}
+.autoSaverSwitch input:checked ~ .label .on {
+  @apply block;
+}
+.autoSaverSwitch input:checked ~ .label .off {
+  @apply hidden;
+}
+
+.themeSwitcherTwo input:checked ~ .light {
+  @apply bg-transparent text-body-color;
+}
+.themeSwitcherTwo input:checked ~ .dark {
+  @apply bg-gray text-primary;
+}
+
+.themeSwitcherTwo input:checked ~ .slider {
+  @apply bg-black;
+}
+.themeSwitcherTwo input:checked ~ .slider .dot {
+  @apply translate-x-[28px];
+}
+
+.themeSwitcherThree input:checked ~ div .light {
+  @apply bg-white text-body-color;
+}
+.themeSwitcherThree input:checked ~ div .dark {
+  @apply bg-primary text-white;
+}
+
+/* box-select-1 */
+
+.checkbox-list:checked ~ label {
+  @apply border-primary bg-primary;
+}
+
+.checkbox-list:checked ~ label .icon {
+  @apply opacity-100;
+}
+
+.box-select-1:checked ~ label .box {
+  @apply border-primary bg-primary;
+}
+.box-select-1:checked ~ label .box .icon {
+  @apply opacity-100;
+}
+.box-select-1:checked ~ label div.user-box {
+  @apply bg-gray-2;
+}
+
+.select-list:checked ~ label {
+  @apply border-primary text-primary;
+}
+.select-list:checked ~ label .icon {
+  @apply bg-primary;
+}
+
+.tableCheckbox:checked ~ label .icon-box {
+  @apply border-primary bg-primary;
+}
+
+.tableCheckbox:checked ~ label .icon {
+  @apply opacity-100;
+}
+
+.tableCheckbox-2:checked ~ label {
+  @apply border-primary bg-primary;
+}
+.tableCheckbox-2:checked ~ label .icon {
+  @apply text-white opacity-100;
+}
+
+/* Maps */
+.jvm-zoom-btn {
+  @apply border-stroke bg-gray top-auto bottom-0 left-auto flex h-8 w-8 items-center justify-center rounded border-[.5px] font-semibold leading-none text-body-color hover:border-primary hover:bg-primary hover:text-white;
+}
+
+.mapOne .jvm-zoom-btn {
+  @apply top-auto bottom-0 left-auto;
+}
+.mapOne .jvm-zoom-btn.jvm-zoomin {
+  @apply right-9;
+}
+.mapOne .jvm-zoom-btn.jvm-zoomout {
+  @apply right-0;
+}
+
+.mapTwo .jvm-zoom-btn {
+  @apply top-auto bottom-0;
+}
+
+.mapTwo .jvm-zoom-btn.jvm-zoomin {
+  @apply left-0;
+}
+.mapTwo .jvm-zoom-btn.jvm-zoomout {
+  @apply left-9;
+}
+
+.mapFour .jvm-zoom-btn {
+  @apply -top-20;
+}
+.mapFour .jvm-zoom-btn.jvm-zoomin {
+  @apply right-9;
+}
+.mapFour .jvm-zoom-btn.jvm-zoomout {
+  @apply right-0;
 }
