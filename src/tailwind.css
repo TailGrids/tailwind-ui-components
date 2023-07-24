@@ -32,9 +32,9 @@ body {
   @apply -top-2 rotate-[135deg];
 }
 
-input:checked ~ .dot {
+/* input:checked ~ .dot {
   @apply translate-x-full bg-primary;
-}
+} */
 
 input:checked ~ .dot .active {
   @apply block;

@@ -2,6 +2,10 @@ const plugin = require("tailwindcss/plugin");
 
 module.exports = plugin(
   function ({ addBase, theme }) {
+    const primaryColor = theme("colors.primary");
+    const whiteColor = theme("colors.white");
+    const bodyColor = theme("colors.body-color");
+
     addBase({
       [`.snap`]: {
         scrollSnapType: `x mandatory`,
@@ -35,7 +39,7 @@ module.exports = plugin(
       },
 
       [`input:checked ~ .dot`]: {
-        background: "#3056D3",
+        background: primaryColor,
         transform: `translateX(100%)`,
       },
 
@@ -48,25 +52,25 @@ module.exports = plugin(
       },
 
       [`input#toggleFour:checked ~ .box`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`input#toggleFour:checked ~ .dot`]: {
-        background: "#fff",
+        background: whiteColor,
         transform: `translateX(100%)`,
       },
 
       [`input#toggleFive:checked ~ .dot`]: {
-        background: "#fff",
+        background: whiteColor,
         transform: `translateX(100%)`,
       },
 
       [`input#toggleFive:checked ~ .dot > span`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`input#toggleSix:checked ~ .dot`]: {
-        background: "#fff",
+        background: whiteColor,
         transform: `translateX(100%)`,
       },
 
@@ -75,32 +79,32 @@ module.exports = plugin(
       },
 
       [`input#toggleEight:checked ~ .dot`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`input#toggleEight:checked ~ .dot span`]: {
-        background: "#3056D3",
-        borderColor: "#fff",
+        background: primaryColor,
+        borderColor: whiteColor,
       },
 
       [`input#toggleNine:checked ~ .dot span `]: {
-        background: "#fff",
+        background: whiteColor,
       },
 
       [`input#toggleNine:checked ~ .dot`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`input:checked ~ .box`]: {
-        borderColor: "#3056D3",
+        borderColor: primaryColor,
       },
 
       [`input#checkboxLabelOne:checked ~ .box`]: {
-        borderColor: "#3056D3",
+        borderColor: primaryColor,
       },
 
       [`input#checkboxLabelOne:checked ~ .box .dot`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`input#checkboxLabelTwo:checked ~ .box span`]: {
@@ -112,15 +116,15 @@ module.exports = plugin(
       },
 
       [`input#checkboxLabelFour:checked ~ .box`]: {
-        borderColor: "#3056D3",
+        borderColor: primaryColor,
       },
 
       [`input#checkboxLabelFour:checked ~ .box span`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`input#checkboxLabelFive:checked ~ .box`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`.shape-gradient`]: {
@@ -140,7 +144,7 @@ module.exports = plugin(
       },
 
       [`input[type="radio"]:checked ~ .box .circle`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`input[type="radio"]:checked ~ .box span`]: {
@@ -148,17 +152,17 @@ module.exports = plugin(
       },
 
       [`.payment:checked ~ label`]: {
-        borderColor: "#3056D3",
-        background: "#3056D3",
+        borderColor: primaryColor,
+        background: primaryColor,
         backgroundOpacity: "8%",
       },
 
       [`.shipping:checked ~ label`]: {
-        borderColor: "#3056D3",
+        borderColor: primaryColor,
       },
 
       [`.shipping:checked ~ label .title`]: {
-        color: "#3056D3",
+        color: primaryColor,
       },
 
       [`.color:checked ~ label span`]: {
@@ -177,37 +181,36 @@ module.exports = plugin(
       },
 
       [`.filter-size:checked ~ label`]: {
-        borderColor: "#3056D3",
-        background: "#3056D3",
-        color: "#fff",
+        borderColor: primaryColor,
+        background: primaryColor,
+        color: whiteColor,
       },
 
       [`.filter-size-2:checked ~ label`]: {
-        borderColor: "#3056D3",
-        background: "#3056D3",
+        borderColor: primaryColor,
+        background: primaryColor,
         backgroundOpacity: "10%",
       },
 
       [`.ram-size:checked ~ label`]: {
-        borderColor: "#3056D3",
-        color: "#3056D3",
+        borderColor: primaryColor,
+        color: primaryColor,
       },
 
       [`.download-radio:checked ~ label`]: {
-        borderColor: "#3056D3",
-        background: "#3056D3",
+        borderColor: primaryColor,
+        background: primaryColor,
       },
 
       [`.download-radio:checked ~ label span`]: {
-        color: "#fff",
+        color: whiteColor,
       },
 
       [`.download-radio:checked ~ label .icon`]: {
         opacity: 1,
       },
 
-      /* ============
-=============== */
+      /* =========================== */
 
       [`.priceSlideOne .noUi-target`]: {
         marginTop: "32px",
@@ -225,21 +228,22 @@ module.exports = plugin(
       [`.priceSlideOne .noUi-connect`]: {
         height: "6px",
         borderRadius: "999px",
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`.priceSlideOne .noUi-horizontal .noUi-handle`]: {
         top: "-8px",
         height: "22px",
         width: "22px",
-        border: "6px solid #3056D3",
-        background: "#fff",
+        border: "6px solid",
+        borderColor: primaryColor,
+        background: whiteColor,
       },
 
       [`.priceSlideTwo .noUi-target`]: {
         marginTop: "32px",
         border: "none",
-        background: "#fff",
+        background: whiteColor,
         boxShadow: "none",
       },
 
@@ -252,7 +256,7 @@ module.exports = plugin(
       [`.priceSlideTwo .noUi-connect`]: {
         height: "4px",
         borderRadius: "99999",
-        background: "#3056D3",
+        background: primaryColor,
       },
 
       [`.priceSlideTwo .noUi-horizontal .noUi-handle`]: {
@@ -260,8 +264,9 @@ module.exports = plugin(
         height: "30px",
         width: "30px",
         borderRadius: "999px",
-        border: "1px solid #3056D3",
-        background: "#fff",
+        border: "1px solid",
+        borderColor: primaryColor,
+        background: whiteColor,
       },
 
       [`.noUi-horizontal .noUi-handle:after`]: {
@@ -278,7 +283,7 @@ module.exports = plugin(
 
       /* ======= Switch ======= */
       [`.autoSaverSwitch input:checked ~ .slider`]: {
-        background: "#3056D3",
+        background: primaryColor,
       },
       [`.autoSaverSwitch input:checked ~ .slider .dot`]: {
         transform: "translateX(24px)",
@@ -292,10 +297,10 @@ module.exports = plugin(
 
       [`.themeSwitcherTwo input:checked ~ .light`]: {
         background: "transparent",
-        color: "#637381",
+        color: bodyColor
       },
       [`.themeSwitcherTwo input:checked ~ .dark`]: {
-        color: "#3056D3",
+        color: primaryColor,
         background: "#f4f7ff",
       },
 
@@ -307,19 +312,19 @@ module.exports = plugin(
       },
 
       [`.themeSwitcherThree input:checked ~ div .light`]: {
-        background: "#fff",
-        color: "#637381",
+        background: whiteColor,
+        color: bodyColor
       },
       [`.themeSwitcherThree input:checked ~ div .dark`]: {
-        background: "#3056D3",
-        color: "#fff",
+        background: primaryColor,
+        color: whiteColor,
       },
 
       /* box-select-1 */
 
       [`.checkbox-list:checked ~ label`]: {
-        borderColor: "#3056d3",
-        background: "#3056d3",
+        borderColor: primaryColor,
+        background: primaryColor,
       },
 
       [`.checkbox-list:checked ~ label .icon`]: {
@@ -327,8 +332,8 @@ module.exports = plugin(
       },
 
       [`.box-select-1:checked ~ label .box`]: {
-        borderColor: "#3056d3",
-        background: "#3056d3",
+        borderColor: primaryColor,
+        background: primaryColor,
       },
       [`.box-select-1:checked ~ label .box .icon`]: {
         opacity: 1,
@@ -338,16 +343,16 @@ module.exports = plugin(
       },
 
       [`.select-list:checked ~ label`]: {
-        borderColor: "#3056d3",
-        color: "#3056d3",
+        borderColor: primaryColor,
+        color: primaryColor,
       },
       [`.select-list:checked ~ label .icon`]: {
-        background: "#3056d3",
+        background: primaryColor,
       },
 
       [`.tableCheckbox:checked ~ label .icon-box`]: {
-        borderColor: "#3056d3",
-        background: "#3056d3",
+        borderColor: primaryColor,
+        background: primaryColor,
       },
 
       [`.tableCheckbox:checked ~ label .icon`]: {
@@ -355,11 +360,11 @@ module.exports = plugin(
       },
 
       [`.tableCheckbox-2:checked ~ label`]: {
-        borderColor: "#3056d3",
-        background: "#3056d3",
+        borderColor: primaryColor,
+        background: primaryColor,
       },
       [`.tableCheckbox-2:checked ~ label .icon`]: {
-        color: "#fff",
+        color: whiteColor,
         opacity: 1,
       },
 
@@ -378,12 +383,12 @@ module.exports = plugin(
         background: "#f4f7ff",
         fontWeight: "semibold",
         lineHeight: "none",
-        color: "#637381",
+        color: bodyColor
       },
       [`.jvm-zoom-btn:hover`]: {
-        borderColor: "#3056D3",
-        background: "#3056d3",
-        color: "#fff",
+        borderColor: primaryColor,
+        background: primaryColor,
+        color: whiteColor,
       },
 
       [`.mapOne .jvm-zoom-btn`]: {
@@ -451,7 +456,7 @@ module.exports = plugin(
         colors: {
           dark: "#090E34",
           "dark-700": "#090e34b3",
-          primary: "#3056D3",
+          primary: '#3056D3',
           secondary: "#13C296",
           "body-color": "#637381",
           warning: "#F9C107",

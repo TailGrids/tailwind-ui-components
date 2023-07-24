@@ -44,6 +44,6 @@
     "url": "https://github.com/TailGrids/tailwind-ui-components"
   },
   "dependencies": {
-    "tailgrids": "^1.1.6"
+    "tailgrids": "2.0.1"
   }
 }
