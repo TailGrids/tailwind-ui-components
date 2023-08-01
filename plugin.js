@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const colors = require("tailwindcss/colors");
 
 module.exports = plugin(
   function ({ addBase, theme }) {
@@ -297,7 +298,7 @@ module.exports = plugin(
 
       [`.themeSwitcherTwo input:checked ~ .light`]: {
         background: "transparent",
-        color: bodyColor
+        color: bodyColor,
       },
       [`.themeSwitcherTwo input:checked ~ .dark`]: {
         color: primaryColor,
@@ -313,7 +314,7 @@ module.exports = plugin(
 
       [`.themeSwitcherThree input:checked ~ div .light`]: {
         background: whiteColor,
-        color: bodyColor
+        color: bodyColor,
       },
       [`.themeSwitcherThree input:checked ~ div .dark`]: {
         background: primaryColor,
@@ -383,7 +384,7 @@ module.exports = plugin(
         background: "#f4f7ff",
         fontWeight: "semibold",
         lineHeight: "none",
-        color: bodyColor
+        color: bodyColor,
       },
       [`.jvm-zoom-btn:hover`]: {
         borderColor: primaryColor,
@@ -456,7 +457,7 @@ module.exports = plugin(
         colors: {
           dark: "#090E34",
           "dark-700": "#090e34b3",
-          primary: '#3056D3',
+          primary: "#3056D3",
           secondary: "#13C296",
           "body-color": "#637381",
           warning: "#F9C107",
@@ -468,11 +469,20 @@ module.exports = plugin(
           "tg-bg": "#f7f8fa",
           black: "#212B36",
           stroke: "#E7E7E7",
-          gray: "#F4F7FF",
-          "gray-1": "#F4F7FF",
-          "gray-2": "#F8FAFC",
-          orange: "#F2994A",
-          purple: "#9B51E0",
+          gray: {
+            ...colors.gray,
+            DEFAULT: "#f4f7ff",
+            1: "#f4f7ff",
+            2: "#f8faFC",
+          },
+          orange: {
+            ...colors.orange,
+            DEFAULT: "#F2994A",
+          },
+          purple: {
+            ...colors.purple,
+            DEFAULT: "#9b51e0",
+          },
         },
         boxShadow: {
           two: "0px 1px 4px rgba(0, 0, 0, 0.12)",

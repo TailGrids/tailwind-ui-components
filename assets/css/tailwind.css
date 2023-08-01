@@ -594,8 +594,8 @@ input[type="radio"]:checked ~ .box span{
 }
 
 .box-select-1:checked ~ label .box{
-  border-color: #3056D3;
-  background: #3056D3;
+  border-color: #3056d3;
+  background: #3056d3;
 }
 
 .box-select-1:checked ~ label .box .icon{
@@ -603,7 +603,7 @@ input[type="radio"]:checked ~ .box span{
 }
 
 .select-list:checked ~ label .icon{
-  background: #3056D3;
+  background: #3056d3;
 }
 
 .tableCheckbox:checked ~ label .icon{
@@ -2624,9 +2624,12 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-/* input:checked ~ .dot {
-  @apply translate-x-full bg-primary;
-} */
+input:checked ~ .dot{
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+}
 
 input:checked ~ .dot .active{
   display: block;

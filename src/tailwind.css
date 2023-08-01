@@ -32,9 +32,9 @@ body {
   @apply -top-2 rotate-[135deg];
 }
 
-/* input:checked ~ .dot {
+input:checked ~ .dot {
   @apply translate-x-full bg-primary;
-} */
+}
 
 input:checked ~ .dot .active {
   @apply block;
@@ -248,7 +248,7 @@ input[type="radio"]:checked ~ .box span {
   @apply bg-transparent text-body-color;
 }
 .themeSwitcherTwo input:checked ~ .dark {
-  @apply bg-gray text-primary;
+  @apply bg-gray-1 text-primary;
 }
 
 .themeSwitcherTwo input:checked ~ .slider {
@@ -309,7 +309,7 @@ input[type="radio"]:checked ~ .box span {
 
 /* Maps */
 .jvm-zoom-btn {
-  @apply border-stroke bg-gray top-auto bottom-0 left-auto flex h-8 w-8 items-center justify-center rounded border-[.5px] font-semibold leading-none text-body-color hover:border-primary hover:bg-primary hover:text-white;
+  @apply top-auto bottom-0 left-auto flex h-8 w-8 items-center justify-center rounded border-[.5px] border-stroke bg-gray-1 font-semibold leading-none text-body-color hover:border-primary hover:bg-primary hover:text-white;
 }
 
 .mapOne .jvm-zoom-btn {
