@@ -40,7 +40,7 @@ and sharing with friends. If you like the the library consider purchasing the [P
 
 ## Changelog
 
-### version 2.0
+### version 2.1.0
 
 -Dark mode added
 -Polished components
