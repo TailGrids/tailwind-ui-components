@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,9 @@
   </head>
   <body>
     <!-- ====== Footer Section Start -->
-    <footer class="relative z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+    <footer
+      class="relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]"
+    >
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -26,30 +28,48 @@
                 <img
                   src="assets/images/logo/logo.svg"
                   alt="logo"
-                  class="max-w-full"
+                  class="max-w-full dark:hidden"
+                />
+                <img
+                  src="assets/images/logo/logo-white.svg"
+                  alt="logo"
+                  class="hidden max-w-full dark:block"
                 />
               </a>
-              <p class="mb-7 text-base text-body-color">
+              <p class="mb-7 text-base text-body-color dark:text-dark-6">
                 Sed ut perspiciatis undmnis is iste natus error sit amet
                 voluptatem totam rem aperiam.
               </p>
-              <p class="flex items-center text-sm font-medium text-dark">
+              <p
+                class="flex items-center text-sm font-medium text-dark dark:text-white"
+              >
                 <span class="mr-3 text-primary">
                   <svg
-                    width="19"
-                    height="21"
-                    viewBox="0 0 19 21"
-                    class="fill-current"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M17.8076 11.8129C17.741 11.0475 17.1088 10.5151 16.3434 10.5151H2.16795C1.40261 10.5151 0.803643 11.0808 0.703816 11.8129L0.00502514 18.8008C-0.0282506 19.2001 0.104853 19.6327 0.371059 19.9322C0.637265 20.2317 1.03657 20.398 1.46916 20.398H17.0755C17.4748 20.398 17.8741 20.2317 18.1736 19.9322C18.4398 19.6327 18.5729 19.2334 18.5396 18.8008L17.8076 11.8129ZM17.2751 19.1668C17.2419 19.2001 17.1753 19.2667 17.0422 19.2667H1.46916C1.36933 19.2667 1.2695 19.2001 1.23623 19.1668C1.20295 19.1336 1.1364 19.067 1.16968 18.9339L1.86847 11.9127C1.86847 11.7463 2.00157 11.6465 2.16795 11.6465H16.3767C16.5431 11.6465 16.6429 11.7463 16.6762 11.9127L17.375 18.9339C17.3417 19.0337 17.3084 19.1336 17.2751 19.1668Z"
-                    />
-                    <path
-                      d="M9.25704 13.1106C7.95928 13.1106 6.92773 14.1422 6.92773 15.4399C6.92773 16.7377 7.95928 17.7693 9.25704 17.7693C10.5548 17.7693 11.5863 16.7377 11.5863 15.4399C11.5863 14.1422 10.5548 13.1106 9.25704 13.1106ZM9.25704 16.6046C8.6248 16.6046 8.09239 16.0722 8.09239 15.4399C8.09239 14.8077 8.6248 14.2753 9.25704 14.2753C9.88928 14.2753 10.4217 14.8077 10.4217 15.4399C10.4217 16.0722 9.88928 16.6046 9.25704 16.6046Z"
-                    />
-                    <path
-                      d="M0.802807 6.05619C0.869358 7.52032 2.16711 8.11928 2.83263 8.11928H5.16193C5.19521 8.11928 5.19521 8.11928 5.19521 8.11928C6.19348 8.05273 7.19175 7.38722 7.19175 6.05619V5.25757C8.28985 5.25757 10.8188 5.25757 11.9169 5.25757V6.05619C11.9169 7.38722 12.9152 8.05273 13.9135 8.11928H13.9467H16.2428C16.9083 8.11928 18.206 7.52032 18.2726 6.05619C18.2726 5.95636 18.2726 5.59033 18.2726 5.25757C18.2726 4.99136 18.2726 4.75843 18.2726 4.72516C18.2726 4.69188 18.2726 4.6586 18.2726 4.6586C18.1727 3.72688 17.84 2.96154 17.2743 2.36258L17.241 2.3293C16.4091 1.56396 15.4109 1.13138 14.6455 0.865169C12.416 0 9.62088 0 9.48778 0C7.52451 0.0332757 6.26003 0.199654 4.36331 0.865169C3.63125 1.0981 2.63297 1.53068 1.80108 2.29603L1.7678 2.3293C1.20212 2.92827 0.869359 3.69361 0.769531 4.62533C0.769531 4.6586 0.769531 4.69188 0.769531 4.69188C0.769531 4.75843 0.769531 4.95809 0.769531 5.22429C0.802807 5.52377 0.802807 5.92308 0.802807 6.05619ZM2.5997 3.12792C3.26521 2.52896 4.09711 2.16292 4.7959 1.89672C6.52624 1.26448 7.65761 1.13138 9.55433 1.0981C9.68743 1.0981 12.2829 1.13138 14.2795 1.89672C14.9783 2.16292 15.8102 2.49568 16.4757 3.12792C16.8417 3.52723 17.0746 4.05964 17.1412 4.69188C17.1412 4.79171 17.1412 4.95809 17.1412 5.22429C17.1412 5.55705 17.1412 5.92308 17.1412 6.02291C17.1079 6.78825 16.3759 6.95463 16.276 6.95463H13.98C13.6472 6.92135 13.1148 6.78825 13.1148 6.05619V4.69188C13.1148 4.42567 12.9485 4.22602 12.7155 4.12619C12.5159 4.05964 6.69262 4.05964 6.49296 4.12619C6.26003 4.19274 6.09365 4.42567 6.09365 4.69188V6.05619C6.09365 6.78825 5.56124 6.92135 5.22848 6.95463H2.93246C2.83263 6.95463 2.10056 6.78825 2.06729 6.02291C2.06729 5.92308 2.06729 5.55705 2.06729 5.22429C2.06729 4.95809 2.06729 4.82498 2.06729 4.72516C2.00073 4.05964 2.23366 3.52723 2.5997 3.12792Z"
-                    />
+                    <g clip-path="url(#clip0_941_15626)">
+                      <path
+                        d="M15.1875 19.4688C14.3438 19.4688 13.375 19.25 12.3125 18.8438C10.1875 18 7.84377 16.375 5.75002 14.2813C3.65627 12.1875 2.03127 9.84377 1.18752 7.68752C0.250019 5.37502 0.343769 3.46877 1.43752 2.40627C1.46877 2.37502 1.53127 2.34377 1.56252 2.31252L4.18752 0.750025C4.84377 0.375025 5.68752 0.562525 6.12502 1.18752L7.96877 3.93753C8.40627 4.59378 8.21877 5.46877 7.59377 5.90627L6.46877 6.68752C7.28127 8.00002 9.59377 11.2188 13.2813 13.5313L13.9688 12.5313C14.5 11.7813 15.3438 11.5625 16.0313 12.0313L18.7813 13.875C19.4063 14.3125 19.5938 15.1563 19.2188 15.8125L17.6563 18.4375C17.625 18.5 17.5938 18.5313 17.5625 18.5625C17 19.1563 16.1875 19.4688 15.1875 19.4688ZM2.37502 3.46878C1.78127 4.12503 1.81252 5.46877 2.50002 7.18752C3.28127 9.15627 4.78127 11.3125 6.75002 13.2813C8.68752 15.2188 10.875 16.7188 12.8125 17.5C14.5 18.1875 15.8438 18.2188 16.5313 17.625L18.0313 15.0625C18.0313 15.0313 18.0313 15.0313 18.0313 15L15.2813 13.1563C15.2813 13.1563 15.2188 13.1875 15.1563 13.2813L14.4688 14.2813C14.0313 14.9063 13.1875 15.0938 12.5625 14.6875C8.62502 12.25 6.18752 8.84377 5.31252 7.46877C4.90627 6.81252 5.06252 5.96878 5.68752 5.53128L6.81252 4.75002V4.71878L4.96877 1.96877C4.96877 1.93752 4.93752 1.93752 4.90627 1.96877L2.37502 3.46878Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M18.3125 8.90633C17.9375 8.90633 17.6563 8.62508 17.625 8.25008C17.375 5.09383 14.7813 2.56258 11.5938 2.34383C11.2188 2.31258 10.9063 2.00008 10.9375 1.59383C10.9688 1.21883 11.2813 0.906333 11.6875 0.937583C15.5625 1.18758 18.7188 4.25008 19.0313 8.12508C19.0625 8.50008 18.7813 8.84383 18.375 8.87508C18.375 8.90633 18.3438 8.90633 18.3125 8.90633Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M15.2187 9.18755C14.875 9.18755 14.5625 8.93755 14.5312 8.56255C14.3437 6.87505 13.0312 5.56255 11.3437 5.3438C10.9687 5.31255 10.6875 4.93755 10.7187 4.56255C10.75 4.18755 11.125 3.9063 11.5 3.93755C13.8437 4.2188 15.6562 6.0313 15.9375 8.37505C15.9687 8.75005 15.7187 9.0938 15.3125 9.1563C15.25 9.18755 15.2187 9.18755 15.2187 9.18755Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_941_15626">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
                   </svg>
                 </span>
                 <span>+012 (345) 678 99</span>
@@ -58,12 +78,14 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
             <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-dark">Resources</h4>
-              <ul>
+              <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                Resources
+              </h4>
+              <ul class="space-y-3">
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     SaaS Development
                   </a>
@@ -71,7 +93,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Our Products
                   </a>
@@ -79,7 +101,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     User Flow
                   </a>
@@ -87,7 +109,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     User Strategy
                   </a>
@@ -97,12 +119,14 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
             <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-dark">Company</h4>
-              <ul>
+              <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                Company
+              </h4>
+              <ul class="space-y-3">
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     About TailGrids
                   </a>
@@ -110,7 +134,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Contact & Support
                   </a>
@@ -118,7 +142,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Success History
                   </a>
@@ -126,7 +150,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Setting & Privacy
                   </a>
@@ -136,12 +160,14 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
             <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-dark">Quick Links</h4>
-              <ul>
+              <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                Quick Links
+              </h4>
+              <ul class="space-y-3">
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Premium Support
                   </a>
@@ -149,7 +175,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Our Services
                   </a>
@@ -157,7 +183,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Know Our Team
                   </a>
@@ -165,7 +191,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary"
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                   >
                     Download App
                   </a>
@@ -175,11 +201,13 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
             <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-dark">Follow Us On</h4>
+              <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                Follow Us On
+              </h4>
               <div class="mb-6 flex items-center">
                 <a
                   href="javascript:void(0)"
-                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width="8"
@@ -194,7 +222,7 @@
                 </a>
                 <a
                   href="javascript:void(0)"
-                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width="16"
@@ -209,7 +237,7 @@
                 </a>
                 <a
                   href="javascript:void(0)"
-                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width="16"
@@ -224,7 +252,7 @@
                 </a>
                 <a
                   href="javascript:void(0)"
-                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width="14"
@@ -238,14 +266,16 @@
                   </svg>
                 </a>
               </div>
-              <p class="text-base text-body-color">&copy; 2025 TailGrids</p>
+              <p class="text-base text-body-color dark:text-dark-6">
+                &copy; 2025 TailGrids
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <div>
-        <span class="absolute left-0 bottom-0 z-[-1]">
+        <span class="absolute bottom-0 left-0 z-[-1]">
           <svg
             width="217"
             height="229"
@@ -272,7 +302,7 @@
             </defs>
           </svg>
         </span>
-        <span class="absolute top-10 right-10 z-[-1]">
+        <span class="absolute right-10 top-10 z-[-1]">
           <svg
             width="75"
             height="75"

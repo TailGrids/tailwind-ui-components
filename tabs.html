@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- ====== Tabs Section Start -->
-    <section class="py-20 lg:py-[120px]">
+    <section class="bg-white py-20 dark:bg-dark lg:py-[120px]">
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
@@ -25,19 +25,19 @@
                 {
                   openTab: 1,
                   activeClasses: 'bg-primary text-white',
-                  inactiveClasses: 'text-body-color hover:bg-primary hover:text-white',
+                  inactiveClasses: 'text-body-color dark:text-dark-6 dark:hover:text-white hover:bg-primary hover:text-white',
                 }
               "
               class="mb-14 w-full"
             >
               <div
-                class="flex flex-wrap rounded-lg border border-[#E4E4E4] py-3 px-4"
+                class="flex flex-col flex-wrap rounded-lg border border-[#E4E4E4] px-4 py-3 dark:border-dark-3 sm:flex-row"
               >
                 <a
                   href="javascript:void(0)"
                   @click="openTab = 1"
                   :class="openTab === 1 ? activeClasses : inactiveClasses"
-                  class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6"
+                  class="rounded-md px-4 py-3 text-sm font-medium md:text-base lg:px-6"
                 >
                   Home
                 </a>
@@ -45,7 +45,7 @@
                   href="javascript:void(0)"
                   @click="openTab = 2"
                   :class="openTab === 2 ? activeClasses : inactiveClasses"
-                  class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6"
+                  class="rounded-md px-4 py-3 text-sm font-medium md:text-base lg:px-6"
                 >
                   About Us
                 </a>
@@ -53,7 +53,7 @@
                   href="javascript:void(0)"
                   @click="openTab = 3"
                   :class="openTab === 3 ? activeClasses : inactiveClasses"
-                  class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6"
+                  class="rounded-md px-4 py-3 text-sm font-medium md:text-base lg:px-6"
                 >
                   Our Team
                 </a>
@@ -61,7 +61,7 @@
                   href="javascript:void(0)"
                   @click="openTab = 4"
                   :class="openTab === 4 ? activeClasses : inactiveClasses"
-                  class="rounded-md py-3 px-4 text-sm font-medium md:text-base lg:px-6"
+                  class="rounded-md px-4 py-3 text-sm font-medium md:text-base lg:px-6"
                 >
                   Company Details
                 </a>
@@ -69,7 +69,7 @@
               <div>
                 <div
                   x-show="openTab === 1"
-                  class="p-6 text-base leading-relaxed text-body-color"
+                  class="p-6 text-base leading-relaxed text-body-color dark:text-dark-6"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Officia nisi, doloribus nulla cumque molestias corporis eaque
@@ -78,7 +78,7 @@
                 </div>
                 <div
                   x-show="openTab === 2"
-                  class="p-6 text-base leading-relaxed text-body-color"
+                  class="p-6 text-base leading-relaxed text-body-color dark:text-dark-6"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Officia nisi, doloribus nulla cumque molestias corporis eaque
@@ -90,7 +90,7 @@
                 </div>
                 <div
                   x-show="openTab === 3"
-                  class="p-6 text-base leading-relaxed text-body-color"
+                  class="p-6 text-base leading-relaxed text-body-color dark:text-dark-6"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Officia nisi, doloribus nulla cumque molestias corporis eaque
@@ -105,7 +105,7 @@
                 </div>
                 <div
                   x-show="openTab === 4"
-                  class="p-6 text-base leading-relaxed text-body-color"
+                  class="p-6 text-base leading-relaxed text-body-color dark:text-dark-6"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Officia nisi, doloribus nulla cumque molestias corporis eaque

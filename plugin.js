@@ -6,6 +6,10 @@ module.exports = plugin(
     const primaryColor = theme("colors.primary");
     const whiteColor = theme("colors.white");
     const bodyColor = theme("colors.body-color");
+    const DarkBodyColor = theme("colors.dark-6");
+    const darkModeBackgroundColor = theme("colors.dark-2");
+    const stroke = theme("colors.stroke");
+    const DarkStroke = theme("colors.dark-3");
 
     addBase({
       [`.snap`]: {
@@ -213,6 +217,48 @@ module.exports = plugin(
 
       /* =========================== */
 
+      [`.noUi-base`]: {
+        background: whiteColor,
+      },
+      [`.dark-mode .noUi-base`]: {
+        background: DarkBodyColor,
+      },
+
+      [`.apexcharts-text`]: {
+        fill: bodyColor,
+      },
+      [`.dark-mode .apexcharts-text`]: {
+        fill: DarkBodyColor,
+      },
+
+      [`.apexcharts-legend-text`]: {
+        color: bodyColor,
+      },
+      [`.dark-mode .apexcharts-legend-text`]: {
+        color: DarkBodyColor,
+      },
+
+      [`.apexcharts-xcrosshairs`]: {
+        fill: stroke,
+      },
+      [`.dark-mode .apexcharts-xcrosshairs`]: {
+        fill: DarkStroke,
+      },
+
+      [`.apexcharts-gridline`]: {
+        fill: stroke,
+      },
+      [`.dark-mode .apexcharts-gridline`]: {
+        fill: DarkStroke,
+      },
+
+      [`.apexcharts-legend-marker`]: {
+        top: 0,
+      },
+      [`.chart-10 .apexcharts-tooltip-text`]: {
+        color: whiteColor,
+      },
+
       [`.priceSlideOne .noUi-target`]: {
         marginTop: "32px",
         border: "none",
@@ -224,6 +270,9 @@ module.exports = plugin(
         height: "6px",
         borderRadius: "99999",
         background: "#d4d9e8",
+      },
+      [`.dark-mode .priceSlideOne .noUi-connects`]: {
+        background: darkModeBackgroundColor,
       },
 
       [`.priceSlideOne .noUi-connect`]: {
@@ -239,6 +288,10 @@ module.exports = plugin(
         border: "6px solid",
         borderColor: primaryColor,
         background: whiteColor,
+        boxShadow: "none",
+      },
+      [`.dark-mode .priceSlideOne .noUi-horizontal .noUi-handle`]: {
+        background: darkModeBackgroundColor,
       },
 
       [`.priceSlideTwo .noUi-target`]: {
@@ -455,36 +508,146 @@ module.exports = plugin(
       },
       extend: {
         colors: {
-          dark: "#090E34",
-          "dark-700": "#090e34b3",
-          primary: "#3056D3",
-          secondary: "#13C296",
-          "body-color": "#637381",
-          warning: "#F9C107",
-          danger: "#DC3545",
-          success: "#3CA745",
-          info: "#3BA2B8",
-          light: "#efefef",
-          "form-stroke": "#E0E0E0",
-          "tg-bg": "#f7f8fa",
-          black: "#212B36",
-          stroke: "#E7E7E7",
+          primary: {
+            DEFAULT: "#3758F9",
+          },
+          secondary: {
+            DEFAULT: "#13C296",
+          },
+          stroke: {
+            DEFAULT: "#DFE4EA",
+          },
+          dark: {
+            DEFAULT: "#111928",
+            2: "#1F2A37",
+            3: "#374151",
+            4: "#4B5563",
+            5: "#6B7280",
+            6: "#9CA3AF",
+            7: "#D1D5DB",
+            8: "#E5E7EB",
+          },
+          black: {
+            ...colors.black,
+            DEFAULT: "#212B36",
+          },
           gray: {
             ...colors.gray,
-            DEFAULT: "#f4f7ff",
-            1: "#f4f7ff",
-            2: "#f8faFC",
+            DEFAULT: "#F9FAFB",
+            1: "#F9FAFB",
+            2: "#F3F4F6",
+            3: "#E5E7EB",
+            4: "#DEE2E6",
+            5: "#CED4DA",
+            6: "#CED4DA",
+            7: "#CED4DA",
           },
           orange: {
             ...colors.orange,
-            DEFAULT: "#F2994A",
+            DEFAULT: "#F27430",
+            dark: "#E1580E",
+            light: "#F59460",
+            "light-2": "#F8B490",
+            "light-3": "#FBD5C0",
+            "light-4": "#FDE5D8",
+            "light-5": "#FFF0E9",
+          },
+          red: {
+            ...colors.red,
+            DEFAULT: "#F23030",
+            dark: "#E10E0E",
+            light: "#F56060",
+            "light-2": "#F89090",
+            "light-3": "#FBC0C0",
+            "light-4": "#FDD8D8",
+            "light-5": "#FEEBEB",
+            "light-6": "#FEF3F3",
+          },
+          pink: {
+            ...colors.pink,
+            DEFAULT: "#D345F8",
+            dark: "#C814F6",
+            light: "#DF76FA",
+            "light-2": "#EAA7FC",
+            "light-3": "#F6D8FE",
+            "light-4": "#FCF1FE",
           },
           purple: {
             ...colors.purple,
-            DEFAULT: "#9b51e0",
+            DEFAULT: "#8646F4",
+            dark: "#6D28D9",
+            "dark-2": "#5B21B6",
+            light: "#A78BFA",
+            "light-2": "#C4B5FD",
+            "light-3": "#DDD6FE",
+            "light-4": "#EDE9FE",
+            "light-5": "#F5F3FF",
           },
+          yellow: {
+            ...colors.yellow,
+            DEFAULT: "#FBBF24",
+            dark: "#F59E0B",
+            "dark-2": "#D97706",
+            light: "#FCD34D",
+            "light-2": "#FDE68A",
+            "light-3": "#FEF3C7",
+            "light-4": "#FFFBEB",
+          },
+          blue: {
+            ...colors.blue,
+            DEFAULT: "#2D68F8",
+            dark: "#1C3FB7",
+            light: "#5475E5",
+            "light-2": "#8099EC",
+            "light-3": "#ADBCF2",
+            "light-4": "#C3CEF6",
+            "light-5": "#E1E8FF",
+          },
+          cyan: {
+            ...colors.cyan,
+            DEFAULT: "#01A9DB",
+            dark: "#0B76B7",
+            light: "#18BFFF",
+            "light-2": "#77D1F3",
+            "light-3": "#D0F0FD",
+          },
+          teal: {
+            ...colors.teal,
+            DEFAULT: "#02AAA4",
+            dark: "#06A09B",
+            light: "#20D9D2",
+            "light-2": "#72DDC3",
+            "light-3": "#C2F5E9",
+          },
+          green: {
+            ...colors.green,
+            DEFAULT: "#22AD5C",
+            dark: "#1A8245",
+            light: "#2CD673",
+            "light-2": "#57DE8F",
+            "light-3": "#82E6AC",
+            "light-4": "#ACEFC8",
+            "light-5": "#C2F3D6",
+            "light-6": "#DAF8E6",
+          },
+          "dark-700": "#090e34b3",
+          "body-color": "#637381",
+          "secondary-color": "#8899A8",
+          warning: colors.yellow,
+          danger: colors.red,
+          success: colors.green,
+          info: colors.teal,
+          light: "#efefef",
+          "form-stroke": "#E0E0E0",
+          "tg-bg": "#f7f8fa",
         },
         boxShadow: {
+          1: "0px 1px 3px 0px rgba(166, 175, 195, 0.40)",
+          2: "0px 5px 12px 0px rgba(0, 0, 0, 0.10)",
+          3: "0px 4px 12px 0px rgba(13, 10, 44, 0.06)",
+          4: "0px 10px 30px 0px rgba(85, 106, 235, 0.12), 0px 4px 10px 0px rgba(85, 106, 235, 0.04), 0px -18px 38px 0px rgba(85, 106, 235, 0.04)",
+          5: "0px 13px 40px 0px rgba(13, 10, 44, 0.12), 0px -8px 18px 0px rgba(13, 10, 44, 0.04)",
+          6: "0px 12px 34px 0px rgba(13, 10, 44, 0.08), 0px 34px 26px 0px rgba(13, 10, 44, 0.05)",
           two: "0px 1px 4px rgba(0, 0, 0, 0.12)",
           three: "0px 1px 5px rgba(0, 0, 0, 0.14)",
           four: "0px 4px 10px rgba(0, 0, 0, 0.12)",
@@ -493,20 +656,44 @@ module.exports = plugin(
           input: "0px 7px 20px rgba(0, 0, 0, 0.03)",
           pricing: "0px 39px 23px -27px rgba(0, 0, 0, 0.04)",
           "switch-1": "0px 0px 5px rgba(0, 0, 0, 0.15)",
+          testimonial: "0px 2px 20px 0px rgba(0, 0, 0, 0.08)",
           "testimonial-4": "0px 60px 120px -20px #EBEFFD",
           "testimonial-5": "0px 10px 39px rgba(92, 115, 160, 0.08)",
+          "testimonial-6": "0px 10px 20px 0px rgba(92, 115, 160, 0.07)",
           "contact-3": "0px 4px 28px rgba(0, 0, 0, 0.08)",
           "contact-6": "0px 2px 4px rgba(0, 0, 0, 0.05)",
           card: "0px 1px 3px rgba(0, 0, 0, 0.12)",
           "card-2": "0px 1px 10px -2px rgba(0, 0, 0, 0.15)",
+          "box-dark": "0px 10px 15px 0px rgba(5, 13, 29, 0.18)",
+          btn: "0px 5px 18px 0px rgba(0, 0, 0, 0.08)",
+          "btn-2": "0px 39px 23px -27px rgba(0, 0, 0, 0.10)",
+          "btn-3": "0px 8px 15px 0px rgba(72, 72, 138, 0.08)",
+          portfolio: "0px 4px 30px 0px rgba(0, 0, 0, 0.08)",
+          "pricing-2": "0px 0px 40px 0px rgba(0, 0, 0, 0.08)",
+          "pricing-3": "0px 6px 45px 0px rgba(0, 0, 0, 0.10)",
+          "pricing-4": "0px 1px 4px 0px rgba(0, 0, 0, 0.12)",
+          "pricing-5": "0px 10px 25px 0px rgba(0, 0, 0, 0.08)",
+          "pricing-6": "0px 0px 20px 0px rgba(0, 0, 0, 0.10)",
+          "pricing-7": "0px 0px 25px 0px rgba(0, 0, 0, 0.10)",
+          feature: "0px 8px 40px 0px rgba(0, 0, 0, 0.05)",
+          team: "0px 15px 40px 0px rgba(0, 0, 0, 0.07)",
+          "team-2": "0px 0px 3px 0px rgba(0, 0, 0, 0.12)",
+          "team-3": "0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+          border: "inset 0 0 0 2px #3758F9",
+          product: "0px 1px 5px 0px rgba(0, 0, 0, 0.14)",
+          "quick-view": "0px 4px 10px 0px rgba(0, 0, 0, 0.12)",
         },
         dropShadow: {
           tooltip: "0px 0px 2px rgba(0, 0, 0, 0.14)",
           three: "0px 1px 5px rgba(0, 0, 0, 0.14)",
           four: "0px 4px 10px rgba(0, 0, 0, 0.12)",
           "avatar-5": "0px 1px 2px rgba(0, 0, 0, 0.08)",
+          portfolio: "0px 16px 24px rgba(165, 171, 199, 0.32)",
+          pricing: "0px 16px 40px rgba(0, 0, 0, 0.07)",
+          feature: "0px 4px 20px rgba(0, 0, 0, 0.05)",
+          testimonial: "0px 25px 40px rgba(208, 231, 243, 0.70)",
         },
       },
     },
-  }
+  },
 );

@@ -38,6 +38,15 @@ module.exports = {
 You can always support this project and inspire us by [Starring🌟 This Repository](https://github.com/TailGrids/tailwind-ui-components)
 and sharing with friends. If you like the the library consider purchasing the [Pro version](https://tailgrids.com/pricing)
 
+## Changelog
+
+### version 2.0
+
+-Dark mode added
+-Polished components
+-Added few core components
+-Update dependency packages
+
 ## 🎁 License
 
 TailGrids Core Version is 100% Free! and open-source you can use it with your personal or commercial projects.

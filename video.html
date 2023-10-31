@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
     <!-- ====== Video Section Start -->
     <section
       x-data="{ videoOpen: false, videoSrc: ''}"
-      class="bg-white py-20 lg:py-[120px]"
+      class="bg-white py-20 dark:bg-dark lg:py-[120px]"
     >
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap justify-center">
@@ -26,7 +26,7 @@
             <div
               class="relative z-20 h-[300px] overflow-hidden rounded-lg md:h-[450px]"
             >
-              <div class="absolute top-0 left-0 h-full w-full">
+              <div class="absolute left-0 top-0 h-full w-full">
                 <img
                   src="assets/images/videos/image-01.jpg"
                   alt="image"
@@ -34,21 +34,23 @@
                 />
               </div>
               <div
-                class="absolute top-0 left-0 z-10 flex h-full w-full items-center justify-center bg-primary bg-opacity-90"
+                class="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center bg-primary bg-opacity-90"
               >
                 <a
                   href="javascript:void(0)"
                   @click="videoOpen = true; videoSrc = 'https://www.youtube.com/embed/LXb3EKWsInQ?autoplay=1' "
-                  class="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary md:h-[100px] md:w-[100px]"
+                  class="absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-white text-primary dark:bg-dark-2 dark:text-white md:h-[100px] md:w-[100px]"
                 >
                   <span
-                    class="absolute top-0 right-0 z-[-1] h-full w-full animate-ping rounded-full bg-white bg-opacity-20 delay-300 duration-1000"
+                    class="absolute right-0 top-0 z-[-1] h-full w-full animate-ping rounded-full bg-white bg-opacity-20 delay-300 duration-1000"
                   ></span>
                   <svg
                     width="23"
                     height="27"
                     viewBox="0 0 23 27"
-                    class="fill-current"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ml-1 fill-current"
                   >
                     <path
                       d="M22.5 12.634C23.1667 13.0189 23.1667 13.9811 22.5 14.366L2.25 26.0574C1.58333 26.4423 0.750001 25.9611 0.750001 25.1913L0.750002 1.80866C0.750002 1.03886 1.58334 0.557731 2.25 0.942631L22.5 12.634Z"
@@ -58,7 +60,7 @@
               </div>
 
               <div>
-                <span class="absolute top-4 left-4 z-40">
+                <span class="absolute left-4 top-4 z-40">
                   <svg
                     width="50"
                     height="79"
@@ -423,7 +425,7 @@
       <div
         x-show="videoOpen"
         x-transition
-        class="fixed top-0 left-0 z-50 flex h-screen w-full items-center justify-center bg-black bg-opacity-70"
+        class="fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center bg-black bg-opacity-70"
       >
         <div
           @click.outside="videoOpen = false; videoSrc=''"
@@ -435,7 +437,7 @@
 
         <button
           @click="videoOpen = false; videoSrc='' "
-          class="absolute top-0 right-0 flex h-20 w-20 cursor-pointer items-center justify-center text-body-color hover:bg-black"
+          class="absolute right-0 top-0 flex h-20 w-20 cursor-pointer items-center justify-center text-body-color hover:bg-black"
         >
           <svg viewBox="0 0 16 15" class="h-8 w-8 fill-current">
             <path

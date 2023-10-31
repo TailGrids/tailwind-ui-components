@@ -309,11 +309,11 @@ input[type="radio"]:checked ~ .box span {
 
 /* Maps */
 .jvm-zoom-btn {
-  @apply top-auto bottom-0 left-auto flex h-8 w-8 items-center justify-center rounded border-[.5px] border-stroke bg-gray-1 font-semibold leading-none text-body-color hover:border-primary hover:bg-primary hover:text-white;
+  @apply bottom-0 left-auto top-auto flex h-8 w-8 items-center justify-center rounded border-[.5px] border-stroke bg-gray-1 font-semibold leading-none text-body-color hover:border-primary hover:bg-primary hover:text-white;
 }
 
 .mapOne .jvm-zoom-btn {
-  @apply top-auto bottom-0 left-auto;
+  @apply bottom-0 left-auto top-auto;
 }
 .mapOne .jvm-zoom-btn.jvm-zoomin {
   @apply right-9;
@@ -323,7 +323,7 @@ input[type="radio"]:checked ~ .box span {
 }
 
 .mapTwo .jvm-zoom-btn {
-  @apply top-auto bottom-0;
+  @apply bottom-0 top-auto;
 }
 
 .mapTwo .jvm-zoom-btn.jvm-zoomin {

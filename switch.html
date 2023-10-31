@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,9 @@
   </head>
   <body>
     <!-- ====== Switch Start -->
-    <section class="relative z-10 overflow-hidden bg-white py-20 lg:py-[100px]">
+    <section
+      class="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[100px]"
+    >
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap items-center">
           <div class="w-full px-4">
@@ -23,15 +25,19 @@
                 <div class="m-10">
                   <label
                     for="toggleTwo"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input type="checkbox" id="toggleTwo" class="sr-only" />
+                      <input
+                        type="checkbox"
+                        id="toggleTwo"
+                        class="peer sr-only"
+                      />
                       <div
-                        class="block h-8 w-14 rounded-full bg-[#E5E7EB]"
+                        class="block h-8 w-14 rounded-full bg-gray-3 dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition"
+                        class="dot absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-4"
                       ></div>
                     </div>
                   </label>
@@ -40,15 +46,19 @@
                 <div class="m-10">
                   <label
                     for="toogleTwo"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input id="toogleTwo" type="checkbox" class="sr-only" />
+                      <input
+                        id="toogleTwo"
+                        type="checkbox"
+                        class="peer sr-only"
+                      />
                       <div
-                        class="h-5 w-14 rounded-full bg-[#E5E7EB] shadow-inner"
+                        class="h-5 w-14 rounded-full bg-gray-3 shadow-inner dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-0 -top-1 h-7 w-7 rounded-full bg-white shadow-switch-1 transition"
+                        class="dot absolute -top-1 left-0 h-7 w-7 rounded-full bg-white shadow-switch-1 transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-4"
                       ></div>
                     </div>
                   </label>
@@ -57,15 +67,19 @@
                 <div class="m-10">
                   <label
                     for="toggleThree"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input type="checkbox" id="toggleThree" class="sr-only" />
+                      <input
+                        type="checkbox"
+                        id="toggleThree"
+                        class="peer sr-only"
+                      />
                       <div
-                        class="block h-8 w-14 rounded-full bg-[#E5E7EB]"
+                        class="block h-8 w-14 rounded-full bg-gray-3 dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition"
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-5"
                       >
                         <span class="active hidden">
                           <svg
@@ -83,7 +97,7 @@
                             />
                           </svg>
                         </span>
-                        <span class="inactive text-body-color">
+                        <span class="inactive text-body-color dark:text-light">
                           <svg
                             class="h-4 w-4 stroke-current"
                             fill="none"
@@ -106,15 +120,19 @@
                 <div class="m-10">
                   <label
                     for="toggleFour"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input type="checkbox" id="toggleFour" class="sr-only" />
+                      <input
+                        type="checkbox"
+                        id="toggleFour"
+                        class="peer sr-only"
+                      />
                       <div
-                        class="box block h-8 w-14 rounded-full bg-dark"
+                        class="box block h-8 w-14 rounded-full bg-dark peer-checked:bg-primary dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition"
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full dark:bg-dark-5 peer-checked:dark:bg-white"
                       ></div>
                     </div>
                   </label>
@@ -123,18 +141,22 @@
                 <div class="m-10">
                   <label
                     for="toggleFive"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input id="toggleFive" type="checkbox" class="sr-only" />
+                      <input
+                        id="toggleFive"
+                        type="checkbox"
+                        class="peer sr-only"
+                      />
                       <div
-                        class="h-5 w-14 rounded-full bg-[#E5E7EB] shadow-inner"
+                        class="h-5 w-14 rounded-full bg-gray-3 shadow-inner dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-0 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-switch-1 transition"
+                        class="dot absolute -top-1 left-0 flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-switch-1 transition peer-checked:translate-x-full dark:bg-dark-5 peer-checked:dark:bg-dark-3"
                       >
                         <span
-                          class="active h-4 w-4 rounded-full bg-[#E5E7EB]"
+                          class="active h-4 w-4 rounded-full bg-gray-3 dark:bg-dark-2"
                         ></span>
                       </div>
                     </div>
@@ -144,15 +166,19 @@
                 <div class="m-10">
                   <label
                     for="toggleSix"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input type="checkbox" id="toggleSix" class="sr-only" />
+                      <input
+                        type="checkbox"
+                        id="toggleSix"
+                        class="peer sr-only"
+                      />
                       <div
                         class="box block h-8 w-14 rounded-full bg-primary"
                       ></div>
                       <div
-                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition"
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-white"
                       ></div>
                     </div>
                   </label>
@@ -161,15 +187,19 @@
                 <div class="m-10">
                   <label
                     for="toggleSeven"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input type="checkbox" id="toggleSeven" class="sr-only" />
+                      <input
+                        type="checkbox"
+                        id="toggleSeven"
+                        class="peer sr-only"
+                      />
                       <div
-                        class="block h-8 w-14 rounded-full border border-[#BFCEFF] bg-[#EAEEFB]"
+                        class="block h-8 w-14 rounded-full border border-[#BFCEFF] bg-gray-3 dark:border-dark-3 dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-1 top-1 h-6 w-6 rounded-full bg-primary transition"
+                        class="dot absolute left-1 top-1 h-6 w-6 rounded-full bg-primary transition peer-checked:translate-x-full peer-checked:bg-primary"
                       ></div>
                     </div>
                   </label>
@@ -177,19 +207,23 @@
 
                 <div class="m-10">
                   <label
-                    for="toggleEight"
-                    class="flex cursor-pointer select-none items-center"
+                    for="toggleEigh"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input id="toggleEight" type="checkbox" class="sr-only" />
+                      <input
+                        id="toggleEigh"
+                        type="checkbox"
+                        class="toggleEight peer sr-only"
+                      />
                       <div
-                        class="box h-5 w-14 rounded-full bg-dark shadow-inner transition"
+                        class="box h-5 w-14 rounded-full bg-dark shadow-inner transition peer-checked:bg-[#EAEEFB] dark:bg-dark-2 peer-checked:dark:bg-dark-3"
                       ></div>
                       <div
-                        class="dot absolute left-0 -top-1 flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-switch-1 transition"
+                        class="dot absolute -top-1 left-0 flex h-7 w-7 items-center justify-center rounded-full bg-white text-dark shadow-switch-1 transition peer-checked:translate-x-full peer-checked:bg-primary peer-checked:text-white dark:bg-dark-3"
                       >
                         <span
-                          class="active h-4 w-4 rounded-full border border-dark bg-white"
+                          class="active h-4 w-4 rounded-full border border-current bg-inherit"
                         ></span>
                       </div>
                     </div>
@@ -199,15 +233,19 @@
                 <div class="m-10">
                   <label
                     for="toggleNine"
-                    class="flex cursor-pointer select-none items-center"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                   >
                     <div class="relative">
-                      <input type="checkbox" id="toggleNine" class="sr-only" />
+                      <input
+                        type="checkbox"
+                        id="toggleNine"
+                        class="peer sr-only"
+                      />
                       <div
-                        class="block h-8 w-14 rounded-full bg-[#EAEEFB]"
+                        class="block h-8 w-14 rounded-full bg-gray-3 dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition"
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-3"
                       >
                         <span class="h-3 w-3 rounded-full bg-primary"></span>
                       </div>
@@ -223,7 +261,7 @@
               <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
                 <label
                   for="checkboxLabelOne"
-                  class="flex cursor-pointer select-none items-center"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                 >
                   <div class="relative">
                     <input
@@ -232,7 +270,7 @@
                       class="sr-only"
                     />
                     <div
-                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border"
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-stroke dark:border-dark-3"
                     >
                       <span class="dot h-[10px] w-[10px] rounded-sm"></span>
                     </div>
@@ -243,7 +281,7 @@
               <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
                 <label
                   for="checkboxLabelTwo"
-                  class="flex cursor-pointer select-none items-center"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                 >
                   <div class="relative">
                     <input
@@ -252,7 +290,7 @@
                       class="sr-only"
                     />
                     <div
-                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border"
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-stroke dark:border-dark-3"
                     >
                       <span class="opacity-0">
                         <svg
@@ -278,7 +316,7 @@
               <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
                 <label
                   for="checkboxLabelThree"
-                  class="flex cursor-pointer select-none items-center"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                 >
                   <div class="relative">
                     <input
@@ -287,7 +325,7 @@
                       class="sr-only"
                     />
                     <div
-                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border"
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-stroke dark:border-dark-3"
                     >
                       <span class="text-primary opacity-0">
                         <svg
@@ -312,7 +350,7 @@
               <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
                 <label
                   for="checkboxLabelFour"
-                  class="flex cursor-pointer select-none items-center"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                 >
                   <div class="relative">
                     <input
@@ -321,7 +359,7 @@
                       class="sr-only"
                     />
                     <div
-                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded-full border"
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded-full border border-stroke dark:border-dark-3"
                     >
                       <span
                         class="h-[10px] w-[10px] rounded-full bg-transparent"
@@ -335,7 +373,7 @@
               <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
                 <label
                   for="checkboxLabelFive"
-                  class="flex cursor-pointer select-none items-center"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
                 >
                   <div class="relative">
                     <input
