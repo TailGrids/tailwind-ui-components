@@ -1,6 +1,6 @@
 {
   "name": "tailgrids",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
@@ -33,17 +33,15 @@
     "build-css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.6",
-    "tailwindcss": "^3.3.5"
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailgrids": "^2.1.0",
+    "tailwindcss": "^3.4.3"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/TailGrids/tailwind-ui-components"
-  },
-  "dependencies": {
-    "tailgrids": "^2.0.3"
   }
 }

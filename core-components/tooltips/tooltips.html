@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltips | TailGrids</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- ====== Tooltips Section Start -->
+    <section class="bg-gray-2 pb-10 pt-20 lg:pb-20 lg:pt-[120px] dark:bg-dark">
+      <div class="container mx-auto py-12">
+        <div class="-mx-4 flex flex-wrap justify-center">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on top
+                </button>
+                <div
+                  class="absolute bottom-full left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-[5px] bg-dark px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100 dark:bg-dark-2"
+                >
+                  <span
+                    class="absolute bottom-[-3px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm bg-dark dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on right
+                </button>
+                <div
+                  class="absolute left-full top-1/2 z-20 ml-3 -translate-y-1/2 whitespace-nowrap rounded-[5px] bg-dark px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100 dark:bg-dark-2"
+                >
+                  <span
+                    class="absolute left-[-3px] top-1/2 -z-10 h-2 w-2 -translate-y-1/2 rotate-45 rounded-sm bg-dark dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on bottom
+                </button>
+                <div
+                  class="absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-[5px] bg-dark px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100 dark:bg-dark-2"
+                >
+                  <span
+                    class="absolute left-1/2 top-[-3px] -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm bg-dark dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14 text-right sm:text-left">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on left
+                </button>
+                <div
+                  class="absolute right-full top-1/2 z-20 mr-3 -translate-y-1/2 whitespace-nowrap rounded-[5px] bg-dark px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100 dark:bg-dark-2"
+                >
+                  <span
+                    class="absolute right-[-3px] top-1/2 -z-10 h-2 w-2 -translate-y-1/2 rotate-45 rounded-sm bg-dark dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto py-12">
+        <div class="-mx-4 flex flex-wrap justify-center">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on top
+                </button>
+                <div
+                  class="absolute bottom-full left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-[5px] bg-white px-3 py-2 text-sm font-medium text-dark opacity-0 shadow-lg group-hover:opacity-100 dark:bg-dark-2 dark:text-white dark:shadow-none"
+                >
+                  <span
+                    class="absolute -bottom-1 left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 bg-white dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on right
+                </button>
+                <div
+                  class="absolute left-full top-1/2 z-20 ml-3 -translate-y-1/2 whitespace-nowrap rounded-[5px] bg-white px-3 py-2 text-sm font-medium text-dark opacity-0 shadow-lg group-hover:opacity-100 dark:bg-dark-2 dark:text-white dark:shadow-none"
+                >
+                  <span
+                    class="absolute -left-1 top-1/2 -z-10 h-2 w-2 -translate-y-1/2 rotate-45 bg-white dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on bottom
+                </button>
+                <div
+                  class="absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-[5px] bg-white px-3 py-2 text-sm font-medium text-dark opacity-0 shadow-lg group-hover:opacity-100 dark:bg-dark-2 dark:text-white dark:shadow-none"
+                >
+                  <span
+                    class="absolute -top-1 left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 bg-white dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14 text-right sm:text-left">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-primary px-[18px] py-2 text-base font-medium text-white"
+                >
+                  Tooltip on left
+                </button>
+                <div
+                  class="absolute right-full top-1/2 z-20 mr-3 -translate-y-1/2 whitespace-nowrap rounded-[5px] bg-white px-3 py-2 text-sm font-medium text-dark opacity-0 shadow-lg group-hover:opacity-100 dark:bg-dark-2 dark:text-white dark:shadow-none"
+                >
+                  <span
+                    class="absolute -right-1 top-1/2 -z-10 h-2 w-2 -translate-y-1/2 rotate-45 bg-white dark:bg-dark-2"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto py-12">
+        <div class="-mx-4 flex flex-wrap justify-center">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-dark px-[18px] py-2 text-base font-medium text-white dark:bg-dark-2"
+                >
+                  Tooltip on top
+                </button>
+                <div
+                  class="absolute bottom-full left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-[5px] bg-primary px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100"
+                >
+                  <span
+                    class="absolute bottom-[-3px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm bg-primary"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-dark px-[18px] py-2 text-base font-medium text-white dark:bg-dark-2"
+                >
+                  Tooltip on right
+                </button>
+                <div
+                  class="absolute left-full top-1/2 z-20 ml-3 -translate-y-1/2 whitespace-nowrap rounded-[5px] bg-primary px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100"
+                >
+                  <span
+                    class="absolute left-[-3px] top-1/2 -z-10 h-2 w-2 -translate-y-1/2 rotate-45 rounded-sm bg-primary"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-dark px-[18px] py-2 text-base font-medium text-white dark:bg-dark-2"
+                >
+                  Tooltip on bottom
+                </button>
+                <div
+                  class="absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-[5px] bg-primary px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100"
+                >
+                  <span
+                    class="absolute left-1/2 top-[-3px] -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm bg-primary"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4">
+            <div class="mb-14 text-right sm:text-left">
+              <div class="group relative inline-block">
+                <button
+                  class="inline-flex rounded bg-dark px-[18px] py-2 text-base font-medium text-white dark:bg-dark-2"
+                >
+                  Tooltip on left
+                </button>
+                <div
+                  class="absolute right-full top-1/2 z-20 mr-3 -translate-y-1/2 whitespace-nowrap rounded-[5px] bg-primary px-3 py-2 text-sm font-medium text-white opacity-0 group-hover:opacity-100"
+                >
+                  <span
+                    class="absolute right-[-3px] top-1/2 -z-10 h-2 w-2 -translate-y-1/2 rotate-45 rounded-sm bg-primary"
+                  ></span>
+                  Tooltip Text
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Tooltips Section End -->
+  </body>
+</html>
