@@ -14,9 +14,9 @@ It's worth noting that this same set of components is also available for React.j
 
 ### Installing via NPM
 
-Ensure you've installed [Node.js](https://nodejs.org) and [Tailwind CSS](https://tailwindcss.com) before TailGrids NPM package. Here's a quick guide to get you started with Tailgrids:
+Ensure you've installed [Node.js](https://nodejs.org) and [Tailwind CSS](https://tailwindcss.com/docs/plugins) before TailGrids NPM package. Here's a quick guide to get you started with Tailgrids:
 
-**1. Install the [TailGrids NPM package](https://www.npmjs.com/package/tailgrids/?ref=tailgrids.com):**
+**1. Install the [TailGrids NPM package](https://www.npmjs.com/package/tailgrids):**
 
 ```bash
 npm i tailgrids
