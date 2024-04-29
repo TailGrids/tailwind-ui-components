@@ -14,26 +14,25 @@ It's worth noting that this same set of components is also available for React a
 
 ### Installing via NPM
 
-Ensure you've installed [Node.js](https://nodejs.org) and [Tailwind CSS](https://tailwindcss.com) before TailGrids NPM package.
+Ensure you've installed [Node.js](https://nodejs.org) and [Tailwind CSS](https://tailwindcss.com) before TailGrids NPM package. Here's a quick guide to get you started with Tailgrids:
 
-1. Install Tailgrids as a dependency using NPM by running the command below:
+**1. Install the [TailGrids NPM package](https://www.npmjs.com/package/tailgrids/?ref=tailgrids.com):**
 
-```
+```bash
 npm i tailgrids
 ```
+**2. Add the TailGrids plugin to your `tailwind.config.js` file:**
 
-2. Require Tailgrids as a plugin inside the `tailwind.config.js` file:
-
-```
+```javascript
 module.exports = {
-  //... other config of your project
+  // Your existing Tailwind CSS configuration goes here
 
-  plugins: [
-    require('tailgrids/plugin')
-  ]
-
-}
+  plugins: [require("tailgrids/plugin")],
+};
 ```
+**3. [Browse the components](https://tailgrids.com/components) and simply copy and paste the ones you like into your projects.**
+
+And that's it! You're all set to start using TailGrids in your project. Happy coding!
 
 ### [⚡ Get PRO Version](https://tailgrids.com/pricing)
 
