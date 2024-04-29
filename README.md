@@ -4,15 +4,13 @@ TailGrids is a library of high-quality Tailwind CSS UI components and blocks, de
 
 The free core version provides numerous UI components along with all core components. It is available for both personal and commercial projects. Please feel free to use it, and don't forget to support and inspire our team by starring this repo. 
 
-It's worth noting that this same set of components is also available for React.js and Vue.js.
-
 ### [🚀 Explore All Components](https://tailgrids.com/components)
 
 ### [🌏 Visit Website](https://tailgrids.com)
 
 ### [📃 Documentation](https://tailgrids.com/docs)
 
-### Installing via NPM
+### Installing via NPM - Same for HTML, React, and Vue projects
 
 Ensure you've installed [Node.js](https://nodejs.org) and [Tailwind CSS](https://tailwindcss.com/docs/plugins) before TailGrids NPM package. Here's a quick guide to get you started with Tailgrids:
 
@@ -35,6 +33,10 @@ module.exports = {
 And that's it! You're all set to start using TailGrids in your project. Happy coding!
 
 >This TailGrids NPM package enables you to use UI components seamlessly in HTML, React, and Vue projects.
+
+### Detailed Installation Guides for React and Vue:
+- **[Installing on React](https://tailgrids.com/docs/components/react)**
+- **[Installing on Vue](https://tailgrids.com/docs/components/vue)**
 
 ### [⚡ Get PRO Version](https://tailgrids.com/pricing)
 
