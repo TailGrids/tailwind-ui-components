@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch | TailGrids</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- ====== Switch Start -->
+    <section
+      class="relative z-10 overflow-hidden bg-white py-20 lg:py-[100px] dark:bg-dark"
+    >
+      <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4">
+            <div class="mb-10">
+              <div class="flex w-full flex-wrap items-center justify-center">
+                <div class="m-10">
+                  <label
+                    for="toggleTwo"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        type="checkbox"
+                        id="toggleTwo"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="block h-8 w-14 rounded-full bg-gray-3 dark:bg-dark-2"
+                      ></div>
+                      <div
+                        class="dot absolute left-1 top-1 h-6 w-6 rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-4"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toogleTwo"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        id="toogleTwo"
+                        type="checkbox"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="h-5 w-14 rounded-full bg-gray-3 shadow-inner dark:bg-dark-2"
+                      ></div>
+                      <div
+                        class="dot absolute -top-1 left-0 h-7 w-7 rounded-full bg-white shadow-switch-1 transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-4"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toggleThree"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        type="checkbox"
+                        id="toggleThree"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="block h-8 w-14 rounded-full bg-gray-3 dark:bg-dark-2"
+                      ></div>
+                      <div
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-5"
+                      >
+                        <span class="active hidden">
+                          <svg
+                            width="11"
+                            height="8"
+                            viewBox="0 0 11 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
+                              fill="white"
+                              stroke="white"
+                              stroke-width="0.4"
+                            />
+                          </svg>
+                        </span>
+                        <span class="inactive text-body-color dark:text-light">
+                          <svg
+                            class="h-4 w-4 stroke-current"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toggleFour"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        type="checkbox"
+                        id="toggleFour"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="box block h-8 w-14 rounded-full bg-dark peer-checked:bg-primary dark:bg-dark-2"
+                      ></div>
+                      <div
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full dark:bg-dark-5 peer-checked:dark:bg-white"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toggleFive"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        id="toggleFive"
+                        type="checkbox"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="h-5 w-14 rounded-full bg-gray-3 shadow-inner dark:bg-dark-2"
+                      ></div>
+                      <div
+                        class="dot absolute -top-1 left-0 flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-switch-1 transition peer-checked:translate-x-full dark:bg-dark-5 peer-checked:dark:bg-dark-3"
+                      >
+                        <span
+                          class="active h-4 w-4 rounded-full bg-gray-3 dark:bg-dark-2"
+                        ></span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toggleSix"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        type="checkbox"
+                        id="toggleSix"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="box block h-8 w-14 rounded-full bg-primary"
+                      ></div>
+                      <div
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-white"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toggleSeven"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        type="checkbox"
+                        id="toggleSeven"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="block h-8 w-14 rounded-full border border-[#BFCEFF] bg-gray-3 dark:border-dark-3 dark:bg-dark-2"
+                      ></div>
+                      <div
+                        class="dot absolute left-1 top-1 h-6 w-6 rounded-full bg-primary transition peer-checked:translate-x-full peer-checked:bg-primary"
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toggleEigh"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        id="toggleEigh"
+                        type="checkbox"
+                        class="toggleEight peer sr-only"
+                      />
+                      <div
+                        class="box h-5 w-14 rounded-full bg-dark shadow-inner transition peer-checked:bg-[#EAEEFB] dark:bg-dark-2 peer-checked:dark:bg-dark-3"
+                      ></div>
+                      <div
+                        class="dot absolute -top-1 left-0 flex h-7 w-7 items-center justify-center rounded-full bg-white text-dark shadow-switch-1 transition peer-checked:translate-x-full peer-checked:bg-primary peer-checked:text-white dark:bg-dark-3"
+                      >
+                        <span
+                          class="active h-4 w-4 rounded-full border border-current bg-inherit"
+                        ></span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="m-10">
+                  <label
+                    for="toggleNine"
+                    class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                  >
+                    <div class="relative">
+                      <input
+                        type="checkbox"
+                        id="toggleNine"
+                        class="peer sr-only"
+                      />
+                      <div
+                        class="block h-8 w-14 rounded-full bg-gray-3 dark:bg-dark-2"
+                      ></div>
+                      <div
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-3"
+                      >
+                        <span class="h-3 w-3 rounded-full bg-primary"></span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div class="-mx-4 flex flex-wrap">
+              <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
+                <label
+                  for="checkboxLabelOne"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                >
+                  <div class="relative">
+                    <input
+                      type="checkbox"
+                      id="checkboxLabelOne"
+                      class="sr-only"
+                    />
+                    <div
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-stroke dark:border-dark-3"
+                    >
+                      <span class="dot h-[10px] w-[10px] rounded-sm"></span>
+                    </div>
+                  </div>
+                  Checkbox Text
+                </label>
+              </div>
+              <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
+                <label
+                  for="checkboxLabelTwo"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                >
+                  <div class="relative">
+                    <input
+                      type="checkbox"
+                      id="checkboxLabelTwo"
+                      class="sr-only"
+                    />
+                    <div
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-stroke dark:border-dark-3"
+                    >
+                      <span class="opacity-0">
+                        <svg
+                          width="11"
+                          height="8"
+                          viewBox="0 0 11 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
+                            fill="#3056D3"
+                            stroke="#3056D3"
+                            stroke-width="0.4"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  Checkbox Text
+                </label>
+              </div>
+              <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
+                <label
+                  for="checkboxLabelThree"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                >
+                  <div class="relative">
+                    <input
+                      type="checkbox"
+                      id="checkboxLabelThree"
+                      class="sr-only"
+                    />
+                    <div
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-stroke dark:border-dark-3"
+                    >
+                      <span class="text-primary opacity-0">
+                        <svg
+                          class="h-[14px] w-[14px] stroke-current"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  Checkbox Text
+                </label>
+              </div>
+              <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
+                <label
+                  for="checkboxLabelFour"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                >
+                  <div class="relative">
+                    <input
+                      type="checkbox"
+                      id="checkboxLabelFour"
+                      class="sr-only"
+                    />
+                    <div
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded-full border border-stroke dark:border-dark-3"
+                    >
+                      <span
+                        class="h-[10px] w-[10px] rounded-full bg-transparent"
+                      >
+                      </span>
+                    </div>
+                  </div>
+                  Checkbox Text
+                </label>
+              </div>
+              <div class="mb-8 w-full px-4 md:w-1/2 lg:w-1/3">
+                <label
+                  for="checkboxLabelFive"
+                  class="flex cursor-pointer select-none items-center text-dark dark:text-white"
+                >
+                  <div class="relative">
+                    <input
+                      type="checkbox"
+                      id="checkboxLabelFive"
+                      class="sr-only"
+                    />
+                    <div
+                      class="box mr-4 flex h-5 w-5 items-center justify-center rounded-full border border-primary"
+                    >
+                      <span class="h-[10px] w-[10px] rounded-full bg-white">
+                      </span>
+                    </div>
+                  </div>
+                  Checkbox Text
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div class="mb-12">
+              <label
+                for="autoSaver"
+                class="autoSaverSwitch relative inline-flex cursor-pointer select-none items-center"
+              >
+                <input
+                  type="checkbox"
+                  name="autoSaver"
+                  id="autoSaver"
+                  class="sr-only"
+                />
+                <span
+                  class="slider mr-3 flex h-[26px] w-[50px] items-center rounded-full bg-[#CCCCCE] p-1 duration-200 dark:bg-dark-2"
+                >
+                  <span
+                    class="dot h-[18px] w-[18px] rounded-full bg-white duration-200"
+                  ></span>
+                </span>
+                <span
+                  class="label flex items-center text-sm font-medium text-dark dark:text-white"
+                >
+                  Auto Saver <span class="on hidden pl-1"> On </span>
+                  <span class="off pl-1"> Off </span>
+                </span>
+              </label>
+            </div>
+
+            <div class="mb-12">
+              <label
+                for="themeSwitcherOne"
+                class="themeSwitcherTwo relative inline-flex cursor-pointer select-none items-center justify-center rounded-md bg-white p-1 shadow-two dark:bg-dark-2"
+              >
+                <input
+                  type="checkbox"
+                  name="themeSwitcherOne"
+                  id="themeSwitcherOne"
+                  class="sr-only"
+                />
+                <span
+                  class="light flex items-center space-x-[6px] rounded bg-gray px-[18px] py-2 text-sm font-medium text-primary dark:bg-dark-3"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    class="mr-[6px] fill-current"
+                  >
+                    <g clip-path="url(#clip0_3122_652)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8 0C8.36819 0 8.66667 0.298477 8.66667 0.666667V2C8.66667 2.36819 8.36819 2.66667 8 2.66667C7.63181 2.66667 7.33333 2.36819 7.33333 2V0.666667C7.33333 0.298477 7.63181 0 8 0ZM8 5.33333C6.52724 5.33333 5.33333 6.52724 5.33333 8C5.33333 9.47276 6.52724 10.6667 8 10.6667C9.47276 10.6667 10.6667 9.47276 10.6667 8C10.6667 6.52724 9.47276 5.33333 8 5.33333ZM4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12C5.79086 12 4 10.2091 4 8ZM8.66667 14C8.66667 13.6318 8.36819 13.3333 8 13.3333C7.63181 13.3333 7.33333 13.6318 7.33333 14V15.3333C7.33333 15.7015 7.63181 16 8 16C8.36819 16 8.66667 15.7015 8.66667 15.3333V14ZM2.3411 2.3424C2.60145 2.08205 3.02356 2.08205 3.28391 2.3424L4.23057 3.28906C4.49092 3.54941 4.49092 3.97152 4.23057 4.23187C3.97022 4.49222 3.54811 4.49222 3.28776 4.23187L2.3411 3.28521C2.08075 3.02486 2.08075 2.60275 2.3411 2.3424ZM12.711 11.7682C12.4506 11.5078 12.0285 11.5078 11.7682 11.7682C11.5078 12.0285 11.5078 12.4506 11.7682 12.711L12.7148 13.6577C12.9752 13.918 13.3973 13.918 13.6577 13.6577C13.918 13.3973 13.918 12.9752 13.6577 12.7148L12.711 11.7682ZM0 8C0 7.63181 0.298477 7.33333 0.666667 7.33333H2C2.36819 7.33333 2.66667 7.63181 2.66667 8C2.66667 8.36819 2.36819 8.66667 2 8.66667H0.666667C0.298477 8.66667 0 8.36819 0 8ZM14 7.33333C13.6318 7.33333 13.3333 7.63181 13.3333 8C13.3333 8.36819 13.6318 8.66667 14 8.66667H15.3333C15.7015 8.66667 16 8.36819 16 8C16 7.63181 15.7015 7.33333 15.3333 7.33333H14ZM4.23057 11.7682C4.49092 12.0285 4.49092 12.4506 4.23057 12.711L3.28391 13.6577C3.02356 13.918 2.60145 13.918 2.3411 13.6577C2.08075 13.3973 2.08075 12.9752 2.3411 12.7148L3.28776 11.7682C3.54811 11.5078 3.97022 11.5078 4.23057 11.7682ZM13.6577 3.28521C13.918 3.02486 13.918 2.60275 13.6577 2.3424C13.3973 2.08205 12.9752 2.08205 12.7148 2.3424L11.7682 3.28906C11.5078 3.54941 11.5078 3.97152 11.7682 4.23187C12.0285 4.49222 12.4506 4.49222 12.711 4.23187L13.6577 3.28521Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3122_652">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Light Mode
+                </span>
+                <span
+                  class="dark flex items-center space-x-[6px] rounded px-[18px] py-2 text-sm font-medium text-body-color"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    class="mr-[6px] fill-current"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.0547 1.67334C8.18372 1.90227 8.16622 2.18562 8.01003 2.39693C7.44055 3.16737 7.16651 4.11662 7.23776 5.07203C7.30901 6.02744 7.72081 6.92554 8.39826 7.60299C9.07571 8.28044 9.97381 8.69224 10.9292 8.76349C11.8846 8.83473 12.8339 8.5607 13.6043 7.99122C13.8156 7.83502 14.099 7.81753 14.3279 7.94655C14.5568 8.07556 14.6886 8.32702 14.6644 8.58868C14.5479 9.84957 14.0747 11.0512 13.3002 12.053C12.5256 13.0547 11.4818 13.8152 10.2909 14.2454C9.09992 14.6756 7.81108 14.7577 6.57516 14.4821C5.33925 14.2065 4.20738 13.5846 3.312 12.6892C2.41661 11.7939 1.79475 10.662 1.51917 9.42608C1.24359 8.19017 1.32569 6.90133 1.75588 5.71038C2.18606 4.51942 2.94652 3.47561 3.94828 2.70109C4.95005 1.92656 6.15168 1.45335 7.41257 1.33682C7.67423 1.31264 7.92568 1.44442 8.0547 1.67334ZM6.21151 2.96004C5.6931 3.1476 5.20432 3.41535 4.76384 3.75591C3.96242 4.37553 3.35405 5.21058 3.00991 6.16334C2.66576 7.11611 2.60008 8.14718 2.82054 9.13591C3.04101 10.1246 3.5385 11.0301 4.25481 11.7464C4.97111 12.4627 5.87661 12.9602 6.86534 13.1807C7.85407 13.4012 8.88514 13.3355 9.8379 12.9913C10.7907 12.6472 11.6257 12.0388 12.2453 11.2374C12.5859 10.7969 12.8536 10.3081 13.0412 9.78974C12.3391 10.0437 11.586 10.1495 10.8301 10.0931C9.55619 9.99813 8.35872 9.44907 7.45545 8.5458C6.55218 7.64253 6.00312 6.44506 5.90812 5.17118C5.85174 4.4152 5.9575 3.66212 6.21151 2.96004Z"
+                    />
+                  </svg>
+
+                  Dark Mode
+                </span>
+              </label>
+            </div>
+
+            <div class="mb-12">
+              <label
+                for="themeSwitcherTwo"
+                class="themeSwitcherTwo relative inline-flex cursor-pointer select-none items-center"
+              >
+                <input
+                  type="checkbox"
+                  name="themeSwitcherTwo"
+                  id="themeSwitcherTwo"
+                  class="sr-only"
+                />
+                <span
+                  class="label flex items-center text-sm font-medium text-dark dark:text-white"
+                >
+                  Light
+                </span>
+                <span
+                  class="slider mx-4 flex h-8 w-[60px] items-center rounded-full bg-[#CCCCCE] p-1 duration-200"
+                >
+                  <span
+                    class="dot h-6 w-6 rounded-full bg-white duration-200"
+                  ></span>
+                </span>
+                <span
+                  class="label flex items-center text-sm font-medium text-dark dark:text-white"
+                >
+                  Dark
+                </span>
+              </label>
+            </div>
+
+            <div class="mb-12">
+              <label
+                for="themeSwitcherThree"
+                class="themeSwitcherThree relative inline-flex cursor-pointer select-none items-center"
+              >
+                <input
+                  type="checkbox"
+                  name="themeSwitcherThree"
+                  id="themeSwitcherThree"
+                  class="sr-only"
+                />
+                <span
+                  class="mr-[18px] text-sm font-medium text-dark dark:text-white"
+                >
+                  Switch Version
+                </span>
+
+                <div
+                  class="flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white shadow-two dark:bg-dark-2"
+                >
+                  <span
+                    class="light flex h-9 w-9 items-center justify-center rounded bg-primary text-white"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3128_692)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8 0C8.36819 0 8.66667 0.298477 8.66667 0.666667V2C8.66667 2.36819 8.36819 2.66667 8 2.66667C7.63181 2.66667 7.33333 2.36819 7.33333 2V0.666667C7.33333 0.298477 7.63181 0 8 0ZM8 5.33333C6.52724 5.33333 5.33333 6.52724 5.33333 8C5.33333 9.47276 6.52724 10.6667 8 10.6667C9.47276 10.6667 10.6667 9.47276 10.6667 8C10.6667 6.52724 9.47276 5.33333 8 5.33333ZM4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12C5.79086 12 4 10.2091 4 8ZM8.66667 14C8.66667 13.6318 8.36819 13.3333 8 13.3333C7.63181 13.3333 7.33333 13.6318 7.33333 14V15.3333C7.33333 15.7015 7.63181 16 8 16C8.36819 16 8.66667 15.7015 8.66667 15.3333V14ZM2.3411 2.3424C2.60145 2.08205 3.02356 2.08205 3.28391 2.3424L4.23057 3.28906C4.49092 3.54941 4.49092 3.97152 4.23057 4.23187C3.97022 4.49222 3.54811 4.49222 3.28776 4.23187L2.3411 3.28521C2.08075 3.02486 2.08075 2.60275 2.3411 2.3424ZM12.711 11.7682C12.4506 11.5078 12.0285 11.5078 11.7682 11.7682C11.5078 12.0285 11.5078 12.4506 11.7682 12.711L12.7148 13.6577C12.9752 13.918 13.3973 13.918 13.6577 13.6577C13.918 13.3973 13.918 12.9752 13.6577 12.7148L12.711 11.7682ZM0 8C0 7.63181 0.298477 7.33333 0.666667 7.33333H2C2.36819 7.33333 2.66667 7.63181 2.66667 8C2.66667 8.36819 2.36819 8.66667 2 8.66667H0.666667C0.298477 8.66667 0 8.36819 0 8ZM14 7.33333C13.6318 7.33333 13.3333 7.63181 13.3333 8C13.3333 8.36819 13.6318 8.66667 14 8.66667H15.3333C15.7015 8.66667 16 8.36819 16 8C16 7.63181 15.7015 7.33333 15.3333 7.33333H14ZM4.23057 11.7682C4.49092 12.0285 4.49092 12.4506 4.23057 12.711L3.28391 13.6577C3.02356 13.918 2.60145 13.918 2.3411 13.6577C2.08075 13.3973 2.08075 12.9752 2.3411 12.7148L3.28776 11.7682C3.54811 11.5078 3.97022 11.5078 4.23057 11.7682ZM13.6577 3.28521C13.918 3.02486 13.918 2.60275 13.6577 2.3424C13.3973 2.08205 12.9752 2.08205 12.7148 2.3424L11.7682 3.28906C11.5078 3.54941 11.5078 3.97152 11.7682 4.23187C12.0285 4.49222 12.4506 4.49222 12.711 4.23187L13.6577 3.28521Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3128_692">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <span
+                    class="dark flex h-9 w-9 items-center justify-center rounded text-body-color"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.0547 1.67334C8.18372 1.90227 8.16622 2.18562 8.01003 2.39693C7.44055 3.16737 7.16651 4.11662 7.23776 5.07203C7.30901 6.02744 7.72081 6.92554 8.39826 7.60299C9.07571 8.28044 9.97381 8.69224 10.9292 8.76349C11.8846 8.83473 12.8339 8.5607 13.6043 7.99122C13.8156 7.83502 14.099 7.81753 14.3279 7.94655C14.5568 8.07556 14.6886 8.32702 14.6644 8.58868C14.5479 9.84957 14.0747 11.0512 13.3002 12.053C12.5256 13.0547 11.4818 13.8152 10.2909 14.2454C9.09992 14.6756 7.81108 14.7577 6.57516 14.4821C5.33925 14.2065 4.20738 13.5846 3.312 12.6892C2.41661 11.7939 1.79475 10.662 1.51917 9.42608C1.24359 8.19017 1.32569 6.90133 1.75588 5.71038C2.18606 4.51942 2.94652 3.47561 3.94828 2.70109C4.95005 1.92656 6.15168 1.45335 7.41257 1.33682C7.67423 1.31264 7.92568 1.44442 8.0547 1.67334ZM6.21151 2.96004C5.6931 3.1476 5.20432 3.41535 4.76384 3.75591C3.96242 4.37553 3.35405 5.21058 3.00991 6.16334C2.66576 7.11611 2.60008 8.14718 2.82054 9.13591C3.04101 10.1246 3.5385 11.0301 4.25481 11.7464C4.97111 12.4627 5.87661 12.9602 6.86534 13.1807C7.85407 13.4012 8.88514 13.3355 9.8379 12.9913C10.7907 12.6472 11.6257 12.0388 12.2453 11.2374C12.5859 10.7969 12.8536 10.3081 13.0412 9.78974C12.3391 10.0437 11.586 10.1495 10.8301 10.0931C9.55619 9.99813 8.35872 9.44907 7.45545 8.5458C6.55218 7.64253 6.00312 6.44506 5.90812 5.17118C5.85174 4.4152 5.9575 3.66212 6.21151 2.96004Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Switch End -->
+  </body>
+</html>

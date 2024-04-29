@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input | TailGrids</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- ====== Input Fields Start -->
+    <section class="bg-white py-20 dark:bg-dark">
+      <div class="container space-y-20">
+        <!-- Default Input Styles -->
+        <div class="w-full max-w-[350px] space-y-7">
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="default-input"
+              placeholder="Enter you full name"
+              class="w-full rounded-lg border border-stroke bg-transparent px-5 py-3 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+            />
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="default-input"
+              placeholder="Enter you full name"
+              class="w-full rounded-lg border border-stroke bg-transparent px-5 py-3 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+            />
+            <p class="pt-1 text-sm text-dark-5">
+              This is a hint text to help user.
+            </p>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark-5"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="default-input"
+              placeholder="Enter you full name"
+              disabled
+              class="w-full rounded-lg border border-gray-2 bg-gray-2 px-5 py-3 text-dark-6 placeholder-dark-6 outline-none dark:border-dark-3 dark:bg-dark-3 dark:placeholder-dark-5"
+            />
+          </div>
+        </div>
+
+        <!-- Input With Icon Styles -->
+        <div class="w-full max-w-[350px] space-y-7">
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-stroke bg-transparent py-3 pl-12 pr-4 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-stroke bg-transparent py-3 pl-12 pr-4 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-dark-5">
+              This is a hint text to help user.
+            </p>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark-5"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                disabled
+                class="w-full rounded-lg border border-gray-2 bg-gray-2 py-3 pl-12 pr-5 text-dark-6 placeholder-dark-6 outline-none dark:border-dark-3 dark:bg-dark-3 dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark-5"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                disabled
+                class="w-full rounded-lg border border-gray-2 bg-gray-2 py-3 pl-12 pr-5 text-dark-6 placeholder-dark-6 outline-none dark:border-dark-3 dark:bg-dark-3 dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-dark-5">
+              This is a hint text to help user.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full max-w-[350px] space-y-7">
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-stroke bg-transparent py-3 pl-5 pr-12 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2464_487)">
+                    <path
+                      d="M7.95162 5.20608H7.97586C8.10692 5.20608 8.2001 5.29926 8.2001 5.43032C8.2001 5.55206 8.09213 5.65456 7.97586 5.65456H7.95162C7.82056 5.65456 7.72738 5.56137 7.72738 5.43032C7.72738 5.30857 7.83535 5.20608 7.95162 5.20608Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.75155 7.34548C7.75155 7.22373 7.85952 7.12124 7.97579 7.12124C8.11659 7.12124 8.20003 7.22402 8.20003 7.32124V11.0788C8.20003 11.2006 8.09205 11.3031 7.97579 11.3031C7.85404 11.3031 7.75155 11.1951 7.75155 11.0788V7.34548Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.97583 0.678802C3.92734 0.678802 0.630371 3.95153 0.630371 8.00001C0.630371 12.0485 3.92734 15.3455 7.97583 15.3455C12.0243 15.3455 15.297 12.0485 15.297 8.00001C15.297 3.95153 12.0243 0.678802 7.97583 0.678802ZM7.97583 14.2546C4.5334 14.2546 1.72128 11.4424 1.72128 8.00001C1.72128 4.55759 4.5334 1.74547 7.97583 1.74547C11.4183 1.74547 14.2061 4.55759 14.2061 8.00001C14.2061 11.4424 11.4183 14.2546 7.97583 14.2546Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2464_487">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-stroke bg-transparent py-3 pl-5 pr-12 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2464_487)">
+                    <path
+                      d="M7.95162 5.20608H7.97586C8.10692 5.20608 8.2001 5.29926 8.2001 5.43032C8.2001 5.55206 8.09213 5.65456 7.97586 5.65456H7.95162C7.82056 5.65456 7.72738 5.56137 7.72738 5.43032C7.72738 5.30857 7.83535 5.20608 7.95162 5.20608Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.75155 7.34548C7.75155 7.22373 7.85952 7.12124 7.97579 7.12124C8.11659 7.12124 8.20003 7.22402 8.20003 7.32124V11.0788C8.20003 11.2006 8.09205 11.3031 7.97579 11.3031C7.85404 11.3031 7.75155 11.1951 7.75155 11.0788V7.34548Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.97583 0.678802C3.92734 0.678802 0.630371 3.95153 0.630371 8.00001C0.630371 12.0485 3.92734 15.3455 7.97583 15.3455C12.0243 15.3455 15.297 12.0485 15.297 8.00001C15.297 3.95153 12.0243 0.678802 7.97583 0.678802ZM7.97583 14.2546C4.5334 14.2546 1.72128 11.4424 1.72128 8.00001C1.72128 4.55759 4.5334 1.74547 7.97583 1.74547C11.4183 1.74547 14.2061 4.55759 14.2061 8.00001C14.2061 11.4424 11.4183 14.2546 7.97583 14.2546Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2464_487">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-dark-5">
+              This is a hint text to help user.
+            </p>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark-5"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                disabled
+                class="w-full rounded-lg border border-gray-2 bg-gray-2 py-3 pl-5 pr-12 text-dark-6 placeholder-dark-6 outline-none dark:border-dark-3 dark:bg-dark-3 dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2464_487)">
+                    <path
+                      d="M7.95162 5.20608H7.97586C8.10692 5.20608 8.2001 5.29926 8.2001 5.43032C8.2001 5.55206 8.09213 5.65456 7.97586 5.65456H7.95162C7.82056 5.65456 7.72738 5.56137 7.72738 5.43032C7.72738 5.30857 7.83535 5.20608 7.95162 5.20608Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.75155 7.34548C7.75155 7.22373 7.85952 7.12124 7.97579 7.12124C8.11659 7.12124 8.20003 7.22402 8.20003 7.32124V11.0788C8.20003 11.2006 8.09205 11.3031 7.97579 11.3031C7.85404 11.3031 7.75155 11.1951 7.75155 11.0788V7.34548Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.97583 0.678802C3.92734 0.678802 0.630371 3.95153 0.630371 8.00001C0.630371 12.0485 3.92734 15.3455 7.97583 15.3455C12.0243 15.3455 15.297 12.0485 15.297 8.00001C15.297 3.95153 12.0243 0.678802 7.97583 0.678802ZM7.97583 14.2546C4.5334 14.2546 1.72128 11.4424 1.72128 8.00001C1.72128 4.55759 4.5334 1.74547 7.97583 1.74547C11.4183 1.74547 14.2061 4.55759 14.2061 8.00001C14.2061 11.4424 11.4183 14.2546 7.97583 14.2546Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2464_487">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark-5"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                disabled
+                class="w-full rounded-lg border border-gray-2 bg-gray-2 py-3 pl-5 pr-12 text-dark-6 placeholder-dark-6 outline-none dark:border-dark-3 dark:bg-dark-3 dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2464_487)">
+                    <path
+                      d="M7.95162 5.20608H7.97586C8.10692 5.20608 8.2001 5.29926 8.2001 5.43032C8.2001 5.55206 8.09213 5.65456 7.97586 5.65456H7.95162C7.82056 5.65456 7.72738 5.56137 7.72738 5.43032C7.72738 5.30857 7.83535 5.20608 7.95162 5.20608Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.75155 7.34548C7.75155 7.22373 7.85952 7.12124 7.97579 7.12124C8.11659 7.12124 8.20003 7.22402 8.20003 7.32124V11.0788C8.20003 11.2006 8.09205 11.3031 7.97579 11.3031C7.85404 11.3031 7.75155 11.1951 7.75155 11.0788V7.34548Z"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="0.666667"
+                    />
+                    <path
+                      d="M7.97583 0.678802C3.92734 0.678802 0.630371 3.95153 0.630371 8.00001C0.630371 12.0485 3.92734 15.3455 7.97583 15.3455C12.0243 15.3455 15.297 12.0485 15.297 8.00001C15.297 3.95153 12.0243 0.678802 7.97583 0.678802ZM7.97583 14.2546C4.5334 14.2546 1.72128 11.4424 1.72128 8.00001C1.72128 4.55759 4.5334 1.74547 7.97583 1.74547C11.4183 1.74547 14.2061 4.55759 14.2061 8.00001C14.2061 11.4424 11.4183 14.2546 7.97583 14.2546Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2464_487">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-dark-5">
+              This is a hint text to help user.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full max-w-[350px] space-y-7">
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="default-input"
+              placeholder="Enter you full name"
+              class="w-full rounded-lg border border-green bg-transparent px-5 py-3 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+            />
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="default-input"
+              placeholder="Enter you full name"
+              class="w-full rounded-lg border border-green bg-transparent px-5 py-3 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+            />
+            <p class="pt-1 text-sm text-green">
+              This is a hint text to help user.
+            </p>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-green bg-transparent py-3 pl-12 pr-4 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-green bg-transparent py-3 pl-12 pr-4 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-green">
+              This is a hint text to help user.
+            </p>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-green bg-transparent py-3 pl-5 pr-12 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-green"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.783284 8C0.783284 4.00909 4.00905 0.78333 7.99995 0.78333C11.9923 0.78333 15.2416 4.01052 15.2416 8C15.2416 11.9909 11.9909 15.2417 7.99995 15.2417C4.01048 15.2417 0.783284 11.9923 0.783284 8ZM1.24162 8C1.24162 11.7324 4.26417 14.7833 7.99995 14.7833C11.7332 14.7833 14.7833 11.7349 14.7833 8.025C14.7833 4.2909 11.734 1.24166 7.99995 1.24166C4.26586 1.24166 1.24162 4.2659 1.24162 8Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                  <path
+                    d="M6.9415 8.81289L7.17419 9.04128L7.40767 8.81369L10.376 5.92016C10.4727 5.83831 10.6189 5.84031 10.7143 5.9357C10.8085 6.0299 10.8091 6.16764 10.7161 6.26242L7.49399 9.35968L7.49395 9.35964L7.48929 9.3643C7.40589 9.4477 7.29254 9.49166 7.17499 9.49166C7.05744 9.49166 6.94409 9.4477 6.86069 9.3643L6.86072 9.36427L6.85692 9.36058L5.26737 7.8207C5.17332 7.7082 5.18307 7.57053 5.25446 7.49223C5.37013 7.39567 5.51234 7.40876 5.58929 7.4857L5.5915 7.48789L6.9415 8.81289Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-green bg-transparent py-3 pl-5 pr-12 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-green"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.783284 8C0.783284 4.00909 4.00905 0.78333 7.99995 0.78333C11.9923 0.78333 15.2416 4.01052 15.2416 8C15.2416 11.9909 11.9909 15.2417 7.99995 15.2417C4.01048 15.2417 0.783284 11.9923 0.783284 8ZM1.24162 8C1.24162 11.7324 4.26417 14.7833 7.99995 14.7833C11.7332 14.7833 14.7833 11.7349 14.7833 8.025C14.7833 4.2909 11.734 1.24166 7.99995 1.24166C4.26586 1.24166 1.24162 4.2659 1.24162 8Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                  <path
+                    d="M6.9415 8.81289L7.17419 9.04128L7.40767 8.81369L10.376 5.92016C10.4727 5.83831 10.6189 5.84031 10.7143 5.9357C10.8085 6.0299 10.8091 6.16764 10.7161 6.26242L7.49399 9.35968L7.49395 9.35964L7.48929 9.3643C7.40589 9.4477 7.29254 9.49166 7.17499 9.49166C7.05744 9.49166 6.94409 9.4477 6.86069 9.3643L6.86072 9.36427L6.85692 9.36058L5.26737 7.8207C5.17332 7.7082 5.18307 7.57053 5.25446 7.49223C5.37013 7.39567 5.51234 7.40876 5.58929 7.4857L5.5915 7.48789L6.9415 8.81289Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-green">
+              This is a hint text to help user.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full max-w-[350px] space-y-7">
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="default-input"
+              placeholder="Enter you full name"
+              class="w-full rounded-lg border border-red bg-transparent px-5 py-3 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+            />
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="default-input"
+              placeholder="Enter you full name"
+              class="w-full rounded-lg border border-red bg-transparent px-5 py-3 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+            />
+            <p class="pt-1 text-sm text-red">
+              This is a hint text to help user.
+            </p>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-red bg-transparent py-3 pl-12 pr-4 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-red bg-transparent py-3 pl-12 pr-4 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute left-0 top-0 flex h-full w-12 items-center justify-center text-dark-5"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4687C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4687L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-red">
+              This is a hint text to help user.
+            </p>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-red bg-transparent py-3 pl-5 pr-12 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-red"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.95162 5.20606H7.97586C8.10692 5.20606 8.2001 5.29925 8.2001 5.4303C8.2001 5.55205 8.09213 5.65454 7.97586 5.65454H7.95162C7.82056 5.65454 7.72738 5.56136 7.72738 5.4303C7.72738 5.30856 7.83535 5.20606 7.95162 5.20606Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                  <path
+                    d="M7.75179 7.34545C7.75179 7.2237 7.85977 7.12121 7.97603 7.12121C8.11683 7.12121 8.20028 7.22399 8.20028 7.32121V11.0788C8.20028 11.2005 8.0923 11.303 7.97603 11.303C7.85429 11.303 7.75179 11.195 7.75179 11.0788V7.34545Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                  <path
+                    d="M7.97583 0.678787C3.92734 0.678787 0.630371 3.95151 0.630371 8C0.630371 12.0485 3.92734 15.3455 7.97583 15.3455C12.0243 15.3455 15.297 12.0485 15.297 8C15.297 3.95151 12.0243 0.678787 7.97583 0.678787ZM7.97583 14.2545C4.5334 14.2545 1.72128 11.4424 1.72128 8C1.72128 4.55758 4.5334 1.74545 7.97583 1.74545C11.4183 1.74545 14.2061 4.55758 14.2061 8C14.2061 11.4424 11.4183 14.2545 7.97583 14.2545Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div>
+            <label
+              for="default-input"
+              class="mb-2.5 block text-base font-medium text-dark dark:text-white"
+            >
+              Name
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                name="default-input"
+                placeholder="Enter you full name"
+                class="w-full rounded-lg border border-red bg-transparent py-3 pl-5 pr-12 text-dark placeholder-dark-6 outline-none dark:text-white dark:placeholder-dark-5"
+              />
+              <span
+                class="absolute right-0 top-0 flex h-full w-12 items-center justify-center text-red"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.95162 5.20606H7.97586C8.10692 5.20606 8.2001 5.29925 8.2001 5.4303C8.2001 5.55205 8.09213 5.65454 7.97586 5.65454H7.95162C7.82056 5.65454 7.72738 5.56136 7.72738 5.4303C7.72738 5.30856 7.83535 5.20606 7.95162 5.20606Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                  <path
+                    d="M7.75179 7.34545C7.75179 7.2237 7.85977 7.12121 7.97603 7.12121C8.11683 7.12121 8.20028 7.22399 8.20028 7.32121V11.0788C8.20028 11.2005 8.0923 11.303 7.97603 11.303C7.85429 11.303 7.75179 11.195 7.75179 11.0788V7.34545Z"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="0.666667"
+                  />
+                  <path
+                    d="M7.97583 0.678787C3.92734 0.678787 0.630371 3.95151 0.630371 8C0.630371 12.0485 3.92734 15.3455 7.97583 15.3455C12.0243 15.3455 15.297 12.0485 15.297 8C15.297 3.95151 12.0243 0.678787 7.97583 0.678787ZM7.97583 14.2545C4.5334 14.2545 1.72128 11.4424 1.72128 8C1.72128 4.55758 4.5334 1.74545 7.97583 1.74545C11.4183 1.74545 14.2061 4.55758 14.2061 8C14.2061 11.4424 11.4183 14.2545 7.97583 14.2545Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </div>
+            <p class="pt-1 text-sm text-red">
+              This is a hint text to help user.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Input Fields End -->
+  </body>
+</html>

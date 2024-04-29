@@ -43,95 +43,6 @@ module.exports = plugin(
         transform: `rotate(135deg)`,
       },
 
-      [`input:checked ~ .dot`]: {
-        background: primaryColor,
-        transform: `translateX(100%)`,
-      },
-
-      [`input:checked ~ .dot .active`]: {
-        display: "block",
-      },
-
-      [`input:checked ~ .dot .inactive`]: {
-        display: "none",
-      },
-
-      [`input#toggleFour:checked ~ .box`]: {
-        background: primaryColor,
-      },
-
-      [`input#toggleFour:checked ~ .dot`]: {
-        background: whiteColor,
-        transform: `translateX(100%)`,
-      },
-
-      [`input#toggleFive:checked ~ .dot`]: {
-        background: whiteColor,
-        transform: `translateX(100%)`,
-      },
-
-      [`input#toggleFive:checked ~ .dot > span`]: {
-        background: primaryColor,
-      },
-
-      [`input#toggleSix:checked ~ .dot`]: {
-        background: whiteColor,
-        transform: `translateX(100%)`,
-      },
-
-      [`input#toggleEight:checked ~ .box`]: {
-        background: "#EAEEFB",
-      },
-
-      [`input#toggleEight:checked ~ .dot`]: {
-        background: primaryColor,
-      },
-
-      [`input#toggleEight:checked ~ .dot span`]: {
-        background: primaryColor,
-        borderColor: whiteColor,
-      },
-
-      [`input#toggleNine:checked ~ .dot span `]: {
-        background: whiteColor,
-      },
-
-      [`input#toggleNine:checked ~ .dot`]: {
-        background: primaryColor,
-      },
-
-      [`input:checked ~ .box`]: {
-        borderColor: primaryColor,
-      },
-
-      [`input#checkboxLabelOne:checked ~ .box`]: {
-        borderColor: primaryColor,
-      },
-
-      [`input#checkboxLabelOne:checked ~ .box .dot`]: {
-        background: primaryColor,
-      },
-
-      [`input#checkboxLabelTwo:checked ~ .box span`]: {
-        opacity: "100%",
-      },
-
-      [`input#checkboxLabelThree:checked ~ .box span`]: {
-        opacity: "100%",
-      },
-
-      [`input#checkboxLabelFour:checked ~ .box`]: {
-        borderColor: primaryColor,
-      },
-
-      [`input#checkboxLabelFour:checked ~ .box span`]: {
-        background: primaryColor,
-      },
-
-      [`input#checkboxLabelFive:checked ~ .box`]: {
-        background: primaryColor,
-      },
-
       [`.shape-gradient`]: {
         background: `linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(196, 196, 196, 0) 100%)`,
       },
@@ -333,45 +244,6 @@ module.exports = plugin(
 
       [`#activityChart .apexcharts-legend-series`]: {
         marginRight: `20px !important`,
-      },
-
-      /* ======= Switch ======= */
-      [`.autoSaverSwitch input:checked ~ .slider`]: {
-        background: primaryColor,
-      },
-      [`.autoSaverSwitch input:checked ~ .slider .dot`]: {
-        transform: "translateX(24px)",
-      },
-      [`.autoSaverSwitch input:checked ~ .label .on`]: {
-        display: "block",
-      },
-      [`.autoSaverSwitch input:checked ~ .label .off`]: {
-        display: "none",
-      },
-
-      [`.themeSwitcherTwo input:checked ~ .light`]: {
-        background: "transparent",
-        color: bodyColor,
-      },
-      [`.themeSwitcherTwo input:checked ~ .dark`]: {
-        color: primaryColor,
-        background: "#f4f7ff",
-      },
-
-      [`.themeSwitcherTwo input:checked ~ .slider`]: {
-        background: "#212B36",
-      },
-      [`.themeSwitcherTwo input:checked ~ .slider .dot`]: {
-        transform: "translateX(28px)",
-      },
-
-      [`.themeSwitcherThree input:checked ~ div .light`]: {
-        background: whiteColor,
-        color: bodyColor,
-      },
-      [`.themeSwitcherThree input:checked ~ div .dark`]: {
-        background: primaryColor,
-        color: whiteColor,
       },
 
       /* box-select-1 */
@@ -682,6 +554,12 @@ module.exports = plugin(
           border: "inset 0 0 0 2px #3758F9",
           product: "0px 1px 5px 0px rgba(0, 0, 0, 0.14)",
           "quick-view": "0px 4px 10px 0px rgba(0, 0, 0, 0.12)",
+
+          // ==== new
+          xs: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+          sm: "0px 1px 3px 0px rgba(16, 24, 40, 0.10), 0px 1px 2px 0px rgba(16, 24, 40, 0.06)",
+          md: "0px 4px 8px -2px rgba(16, 24, 40, 0.10), 0px 2px 4px -2px rgba(16, 24, 40, 0.06)",
+          xl: "0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08)",
         },
         dropShadow: {
           tooltip: "0px 0px 2px rgba(0, 0, 0, 0.14)",

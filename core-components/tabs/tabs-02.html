@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs | TailGrids</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../assets/css/tailwind.css" />
+
+    <script defer src="../../assets/js/alpine.min.js"></script>
+  </head>
+  <body class="space-y-10 bg-white dark:bg-dark-3">
+    <!-- ====== Tabs Section Start -->
+    <section class="bg-white py-20 lg:py-[120px] dark:bg-dark">
+      <div class="container mx-auto">
+        <div
+          x-data="
+            {
+              openTab: 1,
+              activeClasses: 'bg-primary text-white border-primary',
+              inactiveClasses: 'text-dark bg-gray border-stroke hover:bg-primary hover:text-white dark:bg-dark dark:border-dark-3 dark:text-dark-6',
+            }
+          "
+        >
+          <div
+            class="rounded-[10px] border border-stroke bg-white p-3 pb-0 dark:border-dark-3 dark:bg-dark-2"
+          >
+            <div class="-mx-[6px] flex flex-col flex-wrap sm:flex-row">
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 1"
+                  :class="openTab === 1 ? activeClasses : inactiveClasses"
+                >
+                  Home
+                </button>
+              </div>
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 2"
+                  :class="openTab === 2 ? activeClasses : inactiveClasses"
+                >
+                  Profile
+                </button>
+              </div>
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 3"
+                  :class="openTab === 3 ? activeClasses : inactiveClasses"
+                >
+                  Settings
+                </button>
+              </div>
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 4"
+                  :class="openTab === 4 ? activeClasses : inactiveClasses"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-show="openTab === 1">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 2">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab2 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 3">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab3 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 4">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab4 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Tabs Section End -->
+
+    <!-- ====== Tabs Section Start -->
+    <section class="bg-gray py-20 lg:py-[120px] dark:bg-dark">
+      <div class="container mx-auto">
+        <div
+          x-data="
+            {
+              openTab: 1,
+              activeClasses: 'bg-primary text-white border-primary',
+              inactiveClasses: 'text-dark bg-gray border-stroke hover:bg-primary hover:text-white dark:bg-dark dark:text-dark-6 dark:border-dark-3',
+            }
+          "
+          class="rounded-[10px] bg-white p-6 shadow-1 dark:bg-dark-2 dark:shadow-card"
+        >
+          <div class="border-b border-stroke pb-2 dark:border-dark-3">
+            <div class="-mx-[6px] flex flex-col flex-wrap sm:flex-row">
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 1"
+                  :class="openTab === 1 ? activeClasses : inactiveClasses"
+                >
+                  Home
+                </button>
+              </div>
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 2"
+                  :class="openTab === 2 ? activeClasses : inactiveClasses"
+                >
+                  Profile
+                </button>
+              </div>
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 3"
+                  :class="openTab === 3 ? activeClasses : inactiveClasses"
+                >
+                  Settings
+                </button>
+              </div>
+              <div class="px-[6px] pb-3">
+                <button
+                  class="w-full rounded border px-5 py-2 text-base font-medium"
+                  @click="openTab = 4"
+                  :class="openTab === 4 ? activeClasses : inactiveClasses"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-show="openTab === 1">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 2">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab2 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 3">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab3 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 4">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab4 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Tabs Section End -->
+
+    <!-- ====== Tabs Section Start -->
+    <section class="bg-gray py-20 lg:py-[120px] dark:bg-dark">
+      <div class="container mx-auto">
+        <div
+          x-data="
+            {
+              openTab: 1,
+              activeClasses: 'bg-primary text-white border-primary',
+              inactiveClasses: 'text-dark bg-gray border-stroke hover:bg-primary hover:text-white dark:bg-dark dark:text-dark-6 dark:border-dark-3',
+            }
+          "
+          class="rounded-[10px] bg-white p-6 shadow-1 dark:bg-dark-2 dark:shadow-card"
+        >
+          <div class="border-stroke md:border-b dark:border-dark-3">
+            <div class="-mx-[6px] flex flex-col md:flex-row">
+              <div class="px-[6px]">
+                <button
+                  class="mb-1 w-full rounded border px-5 py-2 text-base font-medium md:mb-0 md:rounded-b-none md:border-b-0"
+                  @click="openTab = 1"
+                  :class="openTab === 1 ? activeClasses : inactiveClasses"
+                >
+                  Home
+                </button>
+              </div>
+              <div class="px-[6px]">
+                <button
+                  class="mb-1 w-full rounded border px-5 py-2 text-base font-medium md:mb-0 md:rounded-b-none md:border-b-0"
+                  @click="openTab = 2"
+                  :class="openTab === 2 ? activeClasses : inactiveClasses"
+                >
+                  Profile
+                </button>
+              </div>
+              <div class="px-[6px]">
+                <button
+                  class="mb-1 w-full rounded border px-5 py-2 text-base font-medium md:mb-0 md:rounded-b-none md:border-b-0"
+                  @click="openTab = 3"
+                  :class="openTab === 3 ? activeClasses : inactiveClasses"
+                >
+                  Settings
+                </button>
+              </div>
+              <div class="px-[6px]">
+                <button
+                  class="mb-1 w-full rounded border px-5 py-2 text-base font-medium md:mb-0 md:rounded-b-none md:border-b-0"
+                  @click="openTab = 4"
+                  :class="openTab === 4 ? activeClasses : inactiveClasses"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-show="openTab === 1">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 2">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab2 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 3">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab3 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 4">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab4 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Tabs Section End -->
+
+    <!-- ====== Tabs Section Start -->
+    <section class="bg-gray py-20 lg:py-[120px] dark:bg-dark">
+      <div class="container mx-auto">
+        <div
+          x-data="
+            {
+              openTab: 1,
+              activeClasses: 'text-primary border-primary',
+              inactiveClasses: 'text-dark border-stroke md:border-transparent hover:border-primary hover:text-primary dark:text-dark-6',
+            }
+          "
+          class="rounded-[10px] bg-white p-6 shadow-1 dark:bg-dark-2 dark:shadow-card"
+        >
+          <div class="border-b border-stroke dark:border-dark-3">
+            <div class="-mx-5 flex flex-col md:flex-row">
+              <div class="px-5">
+                <button
+                  class="-mb-[1px] w-full border-b-2 py-2 text-base font-medium"
+                  @click="openTab = 1"
+                  :class="openTab === 1 ? activeClasses : inactiveClasses"
+                >
+                  Profile
+                </button>
+              </div>
+              <div class="px-5">
+                <button
+                  class="-mb-[1px] w-full border-b-2 py-2 text-base font-medium"
+                  @click="openTab = 2"
+                  :class="openTab === 2 ? activeClasses : inactiveClasses"
+                >
+                  Password
+                </button>
+              </div>
+              <div class="px-5">
+                <button
+                  class="-mb-[1px] w-full border-b-2 py-2 text-base font-medium"
+                  @click="openTab = 3"
+                  :class="openTab === 3 ? activeClasses : inactiveClasses"
+                >
+                  Team
+                </button>
+              </div>
+              <div class="px-5">
+                <button
+                  class="-mb-[1px] w-full border-b-2 py-2 text-base font-medium"
+                  @click="openTab = 4"
+                  :class="openTab === 4 ? activeClasses : inactiveClasses"
+                >
+                  Notification
+                </button>
+              </div>
+              <div class="px-5">
+                <button
+                  class="-mb-[1px] w-full border-b-2 py-2 text-base font-medium"
+                  @click="openTab = 5"
+                  :class="openTab === 5 ? activeClasses : inactiveClasses"
+                >
+                  Integration
+                </button>
+              </div>
+              <div class="px-5">
+                <button
+                  class="-mb-[1px] w-full border-b-2 py-2 text-base font-medium"
+                  @click="openTab = 6"
+                  :class="openTab === 6 ? activeClasses : inactiveClasses"
+                >
+                  License
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-show="openTab === 1">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 2">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab2 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 3">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab3 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 4">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab4 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 5">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab5 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 6">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab6 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Tabs Section End -->
+
+    <!-- ====== Tabs Section Start -->
+    <section class="bg-gray py-20 lg:py-[120px] dark:bg-dark">
+      <div class="container mx-auto">
+        <div
+          x-data="
+            {
+              openTab: 1,
+              activeClasses: 'text-primary border-primary bg-gray dark:bg-primary/10',
+              inactiveClasses: 'text-black border-transparent hover:border-primary hover:text-primary dark:text-dark-6',
+            }
+          "
+          class="rounded-[10px] bg-white p-6 shadow-1 dark:bg-dark-2 dark:shadow-card"
+        >
+          <div>
+            <div class="-mx-[6px] flex flex-col sm:flex-row">
+              <div class="px-[6px]">
+                <button
+                  class="-mb-[1px] w-full border-b-2 px-5 py-2 text-base font-medium"
+                  @click="openTab = 1"
+                  :class="openTab === 1 ? activeClasses : inactiveClasses"
+                >
+                  Home
+                </button>
+              </div>
+              <div class="px-[6px]">
+                <button
+                  class="-mb-[1px] w-full border-b-2 px-5 py-2 text-base font-medium"
+                  @click="openTab = 2"
+                  :class="openTab === 2 ? activeClasses : inactiveClasses"
+                >
+                  Profile
+                </button>
+              </div>
+              <div class="px-[6px]">
+                <button
+                  class="-mb-[1px] w-full border-b-2 px-5 py-2 text-base font-medium"
+                  @click="openTab = 3"
+                  :class="openTab === 3 ? activeClasses : inactiveClasses"
+                >
+                  Settings
+                </button>
+              </div>
+              <div class="px-[6px]">
+                <button
+                  class="-mb-[1px] w-full border-b-2 px-5 py-2 text-base font-medium"
+                  @click="openTab = 4"
+                  :class="openTab === 4 ? activeClasses : inactiveClasses"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+          <div x-show="openTab === 1">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 2">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab2 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 3">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab3 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+          <div x-show="openTab === 4">
+            <p class="mt-8 text-base text-body-color dark:text-dark-6">
+              Tab4 ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse luctus ligula nec dolor placerat, a consequat elit
+              volutpat. Quisque nibh lacus, posuere et turpis in, pretium
+              facilisis nisl. Proin congue sem vel sollicitudin sagittis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Tabs Section End -->
+  </body>
+</html>
