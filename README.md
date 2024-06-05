@@ -29,7 +29,7 @@ Step #3: Update the tailwind.config.js file with the TailGrids plugin.
 
 ```js filename="tailwind.config.js" copy showLineNumbers
 module.exports = {
-  content: ["./*.html", "./**/*.{html,js,jsx,ts,tsx,vue}", "./assets/**/*.js"], // your targeted files
+  content: ["./*.html", "./**/*.{html,js,jsx,ts,tsx,vue}", "./assets/**/*.js"],
   theme: {},
   variants: {
     extend: {},
