@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP | TailGrids</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- ====== OTP Start -->
+    <section class="bg-white py-20 dark:bg-dark">
+      <div class="container">
+        <div>
+          <p class="mb-1.5 text-sm font-medium text-dark dark:text-white">
+            Secure code
+          </p>
+          <form id="otp-form" class="flex gap-2">
+            <input
+              type="text"
+              maxlength="1"
+              class="flex w-[64px] items-center justify-center rounded-lg border border-stroke bg-white p-2 text-center text-2xl font-medium text-gray-5 shadow-xs outline-none sm:text-4xl dark:border-dark-3 dark:bg-white/5"
+            />
+            <input
+              type="text"
+              maxlength="1"
+              class="flex w-[64px] items-center justify-center rounded-lg border border-stroke bg-white p-2 text-center text-2xl font-medium text-gray-5 shadow-xs outline-none sm:text-4xl dark:border-dark-3 dark:bg-white/5"
+            />
+            <input
+              type="text"
+              maxlength="1"
+              class="flex w-[64px] items-center justify-center rounded-lg border border-stroke bg-white p-2 text-center text-2xl font-medium text-gray-5 shadow-xs outline-none sm:text-4xl dark:border-dark-3 dark:bg-white/5"
+            />
+            <input
+              type="text"
+              maxlength="1"
+              class="flex w-[64px] items-center justify-center rounded-lg border border-stroke bg-white p-2 text-center text-2xl font-medium text-gray-5 shadow-xs outline-none sm:text-4xl dark:border-dark-3 dark:bg-white/5"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ====== OTP End -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("otp-form");
+        const inputs = [...form.querySelectorAll("input[type=text]")];
+
+        const handleKeyDown = (e) => {
+          if (
+            !/^[0-9]{1}$/.test(e.key) &&
+            e.key !== "Backspace" &&
+            e.key !== "Delete" &&
+            e.key !== "Tab" &&
+            !e.metaKey
+          ) {
+            e.preventDefault();
+          }
+
+          if (e.key === "Delete" || e.key === "Backspace") {
+            const index = inputs.indexOf(e.target);
+            if (index > 0) {
+              inputs[index - 1].value = "";
+              inputs[index - 1].focus();
+            }
+          }
+        };
+
+        const handleInput = (e) => {
+          const { target } = e;
+          const index = inputs.indexOf(target);
+          if (target.value) {
+            if (index < inputs.length - 1) {
+              inputs[index + 1].focus();
+            }
+          }
+        };
+
+        const handleFocus = (e) => {
+          e.target.select();
+        };
+
+        const handlePaste = (e) => {
+          e.preventDefault();
+          const text = e.clipboardData.getData("text");
+          if (!new RegExp(`^[0-9]{${inputs.length}}$`).test(text)) {
+            return;
+          }
+          const digits = text.split("");
+          inputs.forEach((input, index) => (input.value = digits[index]));
+        };
+
+        inputs.forEach((input) => {
+          input.addEventListener("input", handleInput);
+          input.addEventListener("keydown", handleKeyDown);
+          input.addEventListener("focus", handleFocus);
+          input.addEventListener("paste", handlePaste);
+        });
+      });
+    </script>
+  </body>
+</html>
