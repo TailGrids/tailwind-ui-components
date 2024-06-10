@@ -11,21 +11,42 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../../assets/css/tailwind.css" />
+
+    <script defer src="../../assets/js/alpine.min.js"></script>
   </head>
   <body>
     <!-- ====== Clipboard Start -->
-    <section class="bg-white py-20 dark:bg-dark">
+    <section class="bg-white py-20 dark:bg-dark" x-data="clipboardComponent()">
       <div class="container">
         <div class="mx-auto flex w-full max-w-[450px] gap-3">
           <input
             type="text"
-            value="www.tailgrids.com/figma"
-            class="h-12 w-full rounded-lg border border-stroke bg-transparent px-5 py-3 text-dark outline-none duration-200 focus:border-primary dark:border-dark-3 dark:text-white"
+            x-model="inputValue"
+            x-ref="inputField"
+            class="h-12 w-full rounded-lg border border-stroke bg-transparent px-5 py-3 text-dark outline-none duration-200 selection:bg-transparent focus:border-primary dark:border-dark-3 dark:text-white"
           />
           <button
+            @click="copyToClipboard"
             class="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-200 hover:bg-primary/90"
           >
-            <span>
+            <span x-show="copySuccess">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.0394 6.0293L8.03936 15.0293L3.68359 10.6736"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span x-show="!copySuccess">
               <svg
                 width="20"
                 height="20"
@@ -51,11 +72,33 @@
                 />
               </svg>
             </span>
-            Copy
+            <span x-text="copySuccess ? 'Copied!' : 'Copy'"></span>
           </button>
         </div>
       </div>
     </section>
+
+    <script>
+      function clipboardComponent() {
+        return {
+          inputValue: "www.tailgrids.com/figma",
+          copySuccess: false,
+          copyToClipboard() {
+            const inputField = this.$refs.inputField;
+            inputField.select();
+            document.execCommand("copy");
+            this.copySuccess = true;
+            setTimeout(() => {
+              this.copySuccess = false;
+            }, 2000);
+          },
+        };
+      }
+
+      document.addEventListener("alpine:init", () => {
+        Alpine.data("clipboardComponent", clipboardComponent);
+      });
+    </script>
     <!-- ====== Clipboard End -->
   </body>
 </html>
