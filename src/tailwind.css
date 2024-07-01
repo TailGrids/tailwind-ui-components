@@ -4,9 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Inter", sans-serif;
-}
 .snap {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;

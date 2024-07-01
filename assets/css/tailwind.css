@@ -48,7 +48,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter", sans-serif, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -461,10 +461,6 @@ video {
   scroll-snap-align: center;
 }
 
-body{
-  font-family: "Inter", sans-serif;
-}
-
 .navbarTogglerActive > span:nth-child(1){
   transform: rotate(45deg);
   top: 7px;
@@ -725,14 +721,6 @@ input[type="radio"]:checked ~ .box span{
 
 .inset-0{
   inset: 0px;
-}
-
-.-inset-1{
-  inset: -0.25rem;
-}
-
-.inset-1{
-  inset: 0.25rem;
 }
 
 .inset-y-0{
@@ -1418,20 +1406,8 @@ input[type="radio"]:checked ~ .box span{
   height: 100px;
 }
 
-.h-\[106\%\]{
-  height: 106%;
-}
-
-.h-\[108\%\]{
-  height: 108%;
-}
-
 .h-\[10px\]{
   height: 10px;
-}
-
-.h-\[110\%\]{
-  height: 110%;
 }
 
 .h-\[13px\]{
@@ -1550,10 +1526,6 @@ input[type="radio"]:checked ~ .box span{
   height: 100vh;
 }
 
-.h-24{
-  height: 6rem;
-}
-
 .min-h-\[260px\]{
   min-height: 260px;
 }
@@ -1630,10 +1602,6 @@ input[type="radio"]:checked ~ .box span{
   width: 83.333333%;
 }
 
-.w-56{
-  width: 14rem;
-}
-
 .w-6{
   width: 1.5rem;
 }
@@ -1662,20 +1630,8 @@ input[type="radio"]:checked ~ .box span{
   width: 100px;
 }
 
-.w-\[106\%\]{
-  width: 106%;
-}
-
-.w-\[108\%\]{
-  width: 108%;
-}
-
 .w-\[10px\]{
   width: 10px;
-}
-
-.w-\[110\%\]{
-  width: 110%;
 }
 
 .w-\[13px\]{
@@ -1754,6 +1710,10 @@ input[type="radio"]:checked ~ .box span{
   width: 63%;
 }
 
+.w-\[64px\]{
+  width: 64px;
+}
+
 .w-\[68px\]{
   width: 68px;
 }
@@ -1794,10 +1754,6 @@ input[type="radio"]:checked ~ .box span{
   width: 1px;
 }
 
-.w-24{
-  width: 6rem;
-}
-
 .min-w-10{
   min-width: 2.5rem;
 }
@@ -1808,10 +1764,6 @@ input[type="radio"]:checked ~ .box span{
 
 .min-w-\[300px\]{
   min-width: 300px;
-}
-
-.min-w-\[64px\]{
-  min-width: 64px;
 }
 
 .max-w-\[160px\]{
@@ -2013,11 +1965,6 @@ input[type="radio"]:checked ~ .box span{
 
 .rotate-45{
   --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-90{
-  --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2444,10 +2391,6 @@ input[type="radio"]:checked ~ .box span{
   border-style: dashed;
 }
 
-.border-dotted{
-  border-style: dotted;
-}
-
 .border-\[\#BFCEFF\]{
   --tw-border-opacity: 1;
   border-color: rgb(191 206 255 / var(--tw-border-opacity));
@@ -2598,10 +2541,6 @@ input[type="radio"]:checked ~ .box span{
 .border-l-yellow{
   --tw-border-opacity: 1;
   border-left-color: rgb(251 191 36 / var(--tw-border-opacity));
-}
-
-.border-t-transparent{
-  border-top-color: transparent;
 }
 
 .bg-\[\#1C9CEA\]{
@@ -2892,101 +2831,9 @@ input[type="radio"]:checked ~ .box span{
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-primary{
-  --tw-gradient-from: #3758F9 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(55 88 249 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-blue-500{
-  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-transparent{
-  --tw-gradient-from: transparent var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-primary\/80{
-  --tw-gradient-from: rgb(55 88 249 / 0.8) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(55 88 249 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-primary\/10{
-  --tw-gradient-from: rgb(55 88 249 / 0.1) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(55 88 249 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-70\%{
-  --tw-gradient-from-position: 70%;
-}
-
-.from-30\%{
-  --tw-gradient-from-position: 30%;
-}
-
-.from-50\%{
-  --tw-gradient-from-position: 50%;
-}
-
-.from-10\%{
-  --tw-gradient-from-position: 10%;
-}
-
 .via-\[\#7F41F3\]{
   --tw-gradient-to: rgb(127 65 243 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #7F41F3 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-transparent{
-  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-primary\/10{
-  --tw-gradient-to: rgb(55 88 249 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(55 88 249 / 0.1) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-primary\/30{
-  --tw-gradient-to: rgb(55 88 249 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(55 88 249 / 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-primary\/50{
-  --tw-gradient-to: rgb(55 88 249 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(55 88 249 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-primary\/80{
-  --tw-gradient-to: rgb(55 88 249 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(55 88 249 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-primary\/40{
-  --tw-gradient-to: rgb(55 88 249 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(55 88 249 / 0.4) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-70\%{
-  --tw-gradient-via-position: 70%;
-}
-
-.via-40\%{
-  --tw-gradient-via-position: 40%;
-}
-
-.via-50\%{
-  --tw-gradient-via-position: 50%;
-}
-
-.via-20\%{
-  --tw-gradient-via-position: 20%;
 }
 
 .to-\[\#C4C4C400\]{
@@ -2999,42 +2846,6 @@ input[type="radio"]:checked ~ .box span{
 
 .to-gray-4{
   --tw-gradient-to: #DEE2E6 var(--tw-gradient-to-position);
-}
-
-.to-transparent{
-  --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-
-.to-white{
-  --tw-gradient-to: #fff var(--tw-gradient-to-position);
-}
-
-.to-green-500{
-  --tw-gradient-to: #22c55e var(--tw-gradient-to-position);
-}
-
-.to-primary{
-  --tw-gradient-to: #3758F9 var(--tw-gradient-to-position);
-}
-
-.to-primary\/5{
-  --tw-gradient-to: rgb(55 88 249 / 0.05) var(--tw-gradient-to-position);
-}
-
-.to-70\%{
-  --tw-gradient-to-position: 70%;
-}
-
-.to-50\%{
-  --tw-gradient-to-position: 50%;
-}
-
-.to-80\%{
-  --tw-gradient-to-position: 80%;
-}
-
-.bg-clip-padding{
-  background-clip: padding-box;
 }
 
 .fill-current{
@@ -3898,21 +3709,6 @@ input[type="radio"]:checked ~ .box span{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-cyan-500{
-  --tw-shadow-color: #06b6d4;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-pink-500{
-  --tw-shadow-color: #ec4899;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-violet-500{
-  --tw-shadow-color: #8b5cf6;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3959,26 +3755,6 @@ input[type="radio"]:checked ~ .box span{
 
 .duration-300{
   transition-duration: 300ms;
-}
-
-.duration-\[10s\]{
-  transition-duration: 10s;
-}
-
-.duration-\[9000ms\]{
-  transition-duration: 9000ms;
-}
-
-.duration-\[9000s\]{
-  transition-duration: 9000s;
-}
-
-.\!duration-\[90s\]{
-  transition-duration: 90s !important;
-}
-
-body {
-  font-family: "Inter", sans-serif;
 }
 
 .snap {
@@ -4546,6 +4322,22 @@ input[type="radio"]:checked ~ .box span{
       max-width: 1320px;
     }
   }
+}
+
+.selection\:bg-transparent *::-moz-selection{
+  background-color: transparent;
+}
+
+.selection\:bg-transparent *::selection{
+  background-color: transparent;
+}
+
+.selection\:bg-transparent::-moz-selection{
+  background-color: transparent;
+}
+
+.selection\:bg-transparent::selection{
+  background-color: transparent;
 }
 
 .file\:mr-4::file-selector-button{

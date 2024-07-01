@@ -1,5 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = plugin(
   function ({ addBase, theme }) {
@@ -23,10 +24,6 @@ module.exports = plugin(
 
       [`.snap > img`]: {
         scrollSnapAlign: "center",
-      },
-
-      [`body`]: {
-        fontFamily: `"Inter", sans-serif`,
       },
 
       [`.navbarTogglerActive > span:nth-child(1)`]: {
@@ -379,6 +376,9 @@ module.exports = plugin(
         padding: "16px",
       },
       extend: {
+        fontFamily: {
+          sans: ['"Inter", sans-serif', ...defaultTheme.fontFamily.sans],
+        },
         colors: {
           primary: {
             DEFAULT: "#3758F9",
