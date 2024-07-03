@@ -65,8 +65,8 @@
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailgrids": "^2.1.0",
-    "tailwindcss": "^3.4.3"
+    "tailgrids": "^2.2.5",
+    "tailwindcss": "^3.4.4"
   },
   "repository": {
     "type": "git",
