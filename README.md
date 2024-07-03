@@ -1,8 +1,19 @@
-# Free Tailwind CSS UI Components by TailGrids
+# Free Tailwind CSS UI Components and Blocks by TailGrids
 
-TailGrids is a library of high-quality Tailwind CSS UI components and blocks, designed specifically for modern websites, landing pages, and web apps. It comes with all the essential UI components and elements you would expect from a top-notch UI library, featuring a consistent design and a copy-paste UI building tool.
+TailGrids is modern day Tailwind CSS UI library of over 600 high-quality Tailwind CSS UI components and blocks, perfectly crafted for modern websites, landing pages, web applications, dashboard, ecommerce and more. This library includes all the essential UI components and elements you would expect from a top-notch UI library, ensuring a consistent design and easy-to-use, example templates, copy-paste components for HTML, React, and Vue.
 
-The free core version provides numerous UI components along with all core components. It is available for both personal and commercial projects. Please feel free to use it, and don't forget to support and inspire our team by starring this repo.
+### Key Features:
+
+- **Complete UI Library:** TailGrids boasts an impressive assortment of over 600 Tailwind CSS UI components and blocks.
+- **Multi-Framework Support:** TailGrids supports multiple frameworks - HTML, React, and Vue, catering to a wide array of development needs.
+- **Premium Quality:** Our components are designed with a consistent, modern aesthetic, ensuring high-end visual quality.
+- **User-Friendly:** With a simple copy-paste functionality, TailGrids accelerates the development process, saving you time and effort.
+- **Adaptable:** TailGrids is ideal for a variety of applications, including modern websites, landing pages, web apps, dashboards, ecommerce platforms, and more.
+- **Accessible Open-Source Version:** Our free version gives you access to over 200 UI components along with all core components.
+- **Example Templates:** 14 multi-purpose and unique example templates available in HTML and React.
+
+The free open-source version of TailGrids provides 200+ UI components along with all core components, making it a valuable resource for both personal and commercial projects. Feel free to use it, and don't forget to support and inspire our team by starring this repository.
+
 
 ### [🚀 Explore All Components](https://tailgrids.com/components)
 
@@ -10,76 +21,27 @@ The free core version provides numerous UI components along with all core compon
 
 ### [📃 Documentation](https://tailgrids.com/docs)
 
-## Installation
+### Installing via NPM
 
-**Step #1**: Install Tailwind and generate the config file.
+Ensure you've installed [Node.js](https://nodejs.org) and [Tailwind CSS](https://tailwindcss.com) before TailGrids NPM package. Here's a quick guide to get you started with Tailgrids:
 
-```shellscript copy
-npm install -D tailwindcss
-npx tailwindcss init
-```
+**1. Install the [TailGrids NPM package](https://www.npmjs.com/package/tailgrids/?ref=tailgrids.com):**
 
-Step #2: Install TailGrids
-
-```shellscript copy
+```bash
 npm i tailgrids
 ```
+**2. Add the TailGrids plugin to your `tailwind.config.js` file:**
 
-Step #3: Update the tailwind.config.js file with the TailGrids plugin.
-
-```js filename="tailwind.config.js" copy showLineNumbers
+```javascript
 module.exports = {
-  content: ["./*.html", "./**/*.{html,js,jsx,ts,tsx,vue}", "./assets/**/*.js"],
-  theme: {},
-  variants: {
-    extend: {},
-  },
+  // Your existing Tailwind CSS configuration goes here
+
   plugins: [require("tailgrids/plugin")],
 };
 ```
+**3. [Browse the components](https://tailgrids.com/components) and simply copy and paste the ones you like into your projects.**
 
-**Note:** This is the config file for the HTML project. Go to [Tailwind CSS docs](https://tailwindcss.com/docs/installation/framework-guides) and install Tailwind according to your Framework and Languages.
-
-**Step #4**: Add Tailwind CSS directives to your CSS.
-
-Create a CSS file named **input.css** in the root of your project or the /**src** directory. Then, include this code at the top of the file.
-
-```css copy
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-**Step #5**: Generate the CSS file with the build command.
-
-To do that, we must first add the build script to the **package.json** file. Make sure you’ve provided the correct path of the **input.css** file. If it’s in the root, keep the script as it is. If it’s under the /**src** directory, \*\*\*\*include it before the CSS file.
-
-```javascript copy
-"scripts": {
-    "build": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch"
-  },
-```
-
-Then, we will have to run the build command:
-
-```shellscript copy
-npm run build
-```
-
-**Step #6**: Include the compiled CSS file in the HTML file. We’ve compiled the file in the **dist** folder.
-
-```html copy
-<link href="/dist/output.css" rel="stylesheet" />
-```
-
-Now, you can copy and paste the components from TailGrids and build websites.
-
-> This TailGrids NPM package enables you to use UI components seamlessly in HTML, React, and Vue projects.
-
-### Detailed Installation Guides for React and Vue:
-
-- **[Installing on React](https://tailgrids.com/docs/components/react)**
-- **[Installing on Vue](https://tailgrids.com/docs/components/vue)**
+And that's it! You're all set to start using TailGrids in your project. Happy coding!
 
 ### [⚡ Get PRO Version](https://tailgrids.com/pricing)
 
@@ -91,6 +53,7 @@ Now, you can copy and paste the components from TailGrids and build websites.
 
 ### [🖌️ TailGrids Figma](https://tailgrids.com/figma)
 
+
 ## 💙 Support
 
 You can always support this project and inspire us by [Starring🌟 This Repository](https://github.com/TailGrids/tailwind-ui-components)
@@ -99,7 +62,6 @@ and sharing with friends. If you like the the library consider purchasing the [P
 ## Changelog
 
 ### Version 2.2.0
-
 (May, 2024)
 
 - Added over 80 new components.
@@ -109,7 +71,6 @@ and sharing with friends. If you like the the library consider purchasing the [P
 - Updated the Tailwind CSS version along with other dependencies.
 
 ### Version 2.1.0
-
 (October, 2023)
 
 - Introduced dark mode.
@@ -118,7 +79,6 @@ and sharing with friends. If you like the the library consider purchasing the [P
 - Updated dependent packages.
 
 ## Version 2.0.0
-
 (February, 2023)
 
 - This major release doubled our components, introduced dark mode, and expanded our components & example templates.
@@ -132,25 +92,23 @@ and sharing with friends. If you like the the library consider purchasing the [P
 - 100+ eCommerce Components
 
 ## Version 1.1.0
-
 (March, 2022)
 
 We focused on enhancing your design experience with Figma integration and new templates.
 
-- 2 New Templates
-- Figma Source for UI Components
-- Responsive Buttons / Viewport
-- Dedicated Templates Gallery
+- 2 New Templates 
+- Figma Source for UI Components 
+- Responsive Buttons / Viewport 
+- Dedicated Templates Gallery 
 
-## Initial Release
-
+## Initial Release 
 (February, 2022)
 
 The journey began! We launched TailGrids with a strong foundation of components and templates.
 
-- Initial 300+ UI Components
-- Two Example Templates
-- NPM Package for Open Source Version
+ - Initial 300+ UI Components 
+ - Two Example Templates 
+ - NPM Package for Open Source Version
 
 ## 🎁 License
 
