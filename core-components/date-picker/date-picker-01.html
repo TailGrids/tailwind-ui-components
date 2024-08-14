@@ -19,11 +19,14 @@
         <div class="mx-auto w-full max-w-[510px]">
           <div class="relative mb-3">
             <input
+              id="datepicker"
               type="text"
               placeholder="Pick a date"
               class="h-12 w-full appearance-none rounded-lg border border-stroke bg-white pl-12 pr-4 text-dark outline-none focus:border-primary dark:border-dark-3 dark:bg-dark-2 dark:text-white"
+              readonly
             />
             <span
+              id="toggleDatepicker"
               class="absolute inset-y-0 flex h-12 w-12 items-center justify-center text-dark-5"
             >
               <svg
@@ -81,10 +84,12 @@
             </span>
           </div>
           <div
-            class="flex w-full flex-col rounded-xl bg-white p-4 shadow-four sm:p-[30px] dark:bg-dark-2 dark:shadow-box-dark"
+            id="datepicker-container"
+            class="w-full flex-col rounded-xl bg-white p-4 shadow-four sm:p-[30px] dark:bg-dark-2 dark:shadow-box-dark hidden"
           >
             <div class="flex items-center justify-between pb-4">
               <div
+                id="prevMonth"
                 class="flex h-[38px] w-[38px] cursor-pointer items-center justify-center rounded-[7px] border-[.5px] border-stroke bg-gray-2 text-dark hover:border-primary hover:bg-primary hover:text-white sm:h-[46px] sm:w-[46px] dark:border-dark-3 dark:bg-dark dark:text-white"
               >
                 <svg
@@ -101,11 +106,13 @@
                 </svg>
               </div>
               <span
+                id="currentMonth"
                 class="text-xl font-medium capitalize text-dark dark:text-white"
               >
-                january - 2022
+                
               </span>
               <div
+                id="nextMonth"
                 class="flex h-[38px] w-[38px] cursor-pointer items-center justify-center rounded-[7px] border-[.5px] border-stroke bg-gray-2 text-dark hover:border-primary hover:bg-primary hover:text-white sm:h-[46px] sm:w-[46px] dark:border-dark-3 dark:bg-dark dark:text-white"
               >
                 <svg
@@ -123,7 +130,7 @@
               </div>
             </div>
             <div
-              class="flex justify-between pb-2 pt-4 text-sm font-medium capitalize text-body-color sm:text-lg dark:text-dark-6"
+              class="grid grid-cols-7 justify-between pb-2 pt-4 text-sm font-medium capitalize text-body-color sm:text-lg dark:text-dark-6"
             >
               <span
                 class="flex h-[38px] w-[38px] items-center justify-center sm:h-[46px] sm:w-[47px]"
@@ -168,242 +175,17 @@
               </span>
             </div>
 
-            <div
-              class="flex justify-between pb-2 text-sm font-medium sm:text-lg"
-            >
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-body-color hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-dark-6 dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                30
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-body-color hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-dark-6 dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                31
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                01
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                02
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                03
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                04
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                05
-              </span>
-            </div>
-            <div
-              class="flex justify-between pb-2 text-sm font-medium sm:text-lg"
-            >
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                06
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                07
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                08
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-md border-[.5px] border-primary bg-primary text-white sm:h-[46px] sm:w-[47px]"
-              >
-                09
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                10
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                11
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                12
-              </span>
-            </div>
-
-            <div
-              class="flex justify-between pb-2 text-sm font-medium sm:text-lg"
-            >
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                13
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                14
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                15
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                16
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                17
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                18
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                19
-              </span>
-            </div>
-
-            <div
-              class="flex justify-between pb-2 text-sm font-medium sm:text-lg"
-            >
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                20
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                21
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                22
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                23
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                24
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                25
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                26
-              </span>
-            </div>
-
-            <div
-              class="flex justify-between pb-2 text-sm font-medium sm:text-lg"
-            >
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                27
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                28
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                29
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                30
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-body-color hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-dark-6 dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                01
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-body-color hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-dark-6 dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                02
-              </span>
-
-              <span
-                class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-body-color hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-dark-6 dark:hover:border-dark-3 dark:hover:bg-dark"
-              >
-                03
-              </span>
-            </div>
+            <div id="days-container" class="grid grid-cols-7 justify-between text-sm font-medium sm:text-lg"></div>
 
             <div class="flex items-center space-x-3 pt-4 sm:space-x-5">
               <button
+                id="cancelButton"
                 class="flex h-[50px] w-full items-center justify-center rounded-md bg-dark text-base font-medium text-white hover:bg-opacity-90"
               >
                 Remove
               </button>
               <button
+                id="applyButton"
                 class="flex h-[50px] w-full items-center justify-center rounded-md bg-primary text-base font-medium text-white hover:bg-blue-dark"
               >
                 Done
@@ -414,5 +196,86 @@
       </div>
     </section>
     <!-- ====== Date Picker End -->
+
+    <script>
+      const datepicker = document.getElementById('datepicker');
+      const datepickerContainer = document.getElementById('datepicker-container');
+      const daysContainer = document.getElementById('days-container');
+      const currentMonthElement = document.getElementById('currentMonth');
+      const prevMonthButton = document.getElementById('prevMonth');
+      const nextMonthButton = document.getElementById('nextMonth');
+      const cancelButton = document.getElementById('cancelButton');
+      const applyButton = document.getElementById('applyButton');
+      const toggleDatepicker = document.getElementById('toggleDatepicker');
+
+      let currentDate = new Date();
+      let selectedDate = null;
+
+      function renderCalendar() {
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth();
+
+        currentMonthElement.textContent = currentDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+        daysContainer.innerHTML = '';
+        const firstDayOfMonth = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        for (let i = 0; i < firstDayOfMonth; i++) {
+          daysContainer.innerHTML += `<div></div>`;
+        }
+
+        for (let i = 1; i <= daysInMonth; i++) {
+          daysContainer.innerHTML += `<div class="flex h-[38px] w-[38px] items-center justify-center rounded-[7px] border-[.5px] border-transparent text-dark hover:border-stroke hover:bg-gray-2 sm:h-[46px] sm:w-[47px] dark:text-white dark:hover:border-dark-3 dark:hover:bg-dark mb-2">${i}</div>`;
+        }
+
+        document.querySelectorAll('#days-container div').forEach(day => {
+          day.addEventListener('click', function () {
+            selectedDate = `${month + 1}/${this.textContent}/${year}`;
+            document.querySelectorAll('#days-container div').forEach(d => d.classList.remove('bg-primary', 'text-white', 'dark:text-white'));
+            this.classList.add('bg-primary', 'text-white', 'dark:text-white');
+          });
+        });
+      }
+
+      datepicker.addEventListener('click', function () {
+        datepickerContainer.classList.toggle('hidden');
+        renderCalendar();
+      });
+
+      toggleDatepicker.addEventListener('click', function () {
+        datepickerContainer.classList.toggle('hidden');
+        renderCalendar();
+      });
+
+      prevMonthButton.addEventListener('click', function () {
+        currentDate.setMonth(currentDate.getMonth() - 1);
+        renderCalendar();
+      });
+
+      nextMonthButton.addEventListener('click', function () {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        renderCalendar();
+      });
+
+      cancelButton.addEventListener('click', function () {
+        selectedDate = null;
+        datepickerContainer.classList.add('hidden');
+      });
+
+      applyButton.addEventListener('click', function () {
+        if (selectedDate) {
+          datepicker.value = selectedDate;
+        }
+        datepickerContainer.classList.add('hidden');
+      });
+
+      // Close datepicker when clicking outside
+      document.addEventListener('click', function (event) {
+        if (!datepicker.contains(event.target) && !datepickerContainer.contains(event.target)) {
+          datepickerContainer.classList.add('hidden');
+        }
+      });
+    </script>
   </body>
 </html>
