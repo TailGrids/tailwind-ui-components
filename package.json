@@ -58,15 +58,15 @@
   "description": "Handcrafted Library of Tailwind CSS UI Components & Blocks for HTML, React and Vue.",
   "bugs": "https://github.com/TailGrids/tailwind-ui-components/issues",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
+    "build-css": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
+    "@tailwindcss/postcss": "^4.0.9",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.14",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "tailgrids": "^2.2.5",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^4.0.9"
   },
   "repository": {
     "type": "git",

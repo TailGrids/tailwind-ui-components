@@ -1,8 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '../plugin.js';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 .snap {
   scroll-snap-type: x mandatory;
@@ -138,7 +157,7 @@ input[type="radio"]:checked ~ .box span {
 }
 
 .payment:checked ~ label {
-  @apply border-primary bg-primary bg-opacity-[8%];
+  @apply border-primary bg-primary/[8%];
 }
 
 .shipping:checked ~ label {
@@ -166,7 +185,7 @@ input[type="radio"]:checked ~ .box span {
 }
 
 .filter-size-2:checked ~ label {
-  @apply border-primary bg-primary bg-opacity-10;
+  @apply border-primary bg-primary/10;
 }
 
 .ram-size:checked ~ label {
@@ -224,7 +243,7 @@ input[type="radio"]:checked ~ .box span {
 }
 
 #activityChart .apexcharts-legend-series {
-  @apply !mr-5;
+  @apply mr-5!;
 }
 
 /* ======= Switch ======= */
@@ -306,7 +325,7 @@ input[type="radio"]:checked ~ .box span {
 
 /* Maps */
 .jvm-zoom-btn {
-  @apply bottom-0 left-auto top-auto flex h-8 w-8 items-center justify-center rounded border-[.5px] border-stroke bg-gray-1 font-semibold leading-none text-body-color hover:border-primary hover:bg-primary hover:text-white;
+  @apply bottom-0 left-auto top-auto flex h-8 w-8 items-center justify-center rounded-sm border-[.5px] border-stroke bg-gray-1 font-semibold leading-none text-body-color hover:border-primary hover:bg-primary hover:text-white;
 }
 
 .mapOne .jvm-zoom-btn {
