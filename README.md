@@ -58,6 +58,12 @@ and sharing with friends. If you like the the library consider purchasing the [P
 ## Changelog
 
 ### Version 2.2.1
+(Mar, 2025)
+
+- Updated to Tailwind CSS v4
+
+
+### Version 2.2.1
 (Aug, 2024)
 
 - Timepicker added
