@@ -28,7 +28,7 @@
               rows="5"
               name="default-textarea"
               placeholder="Placeholder"
-              class="w-full rounded-lg border border-stroke bg-transparent p-5 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+              class="w-full rounded-lg border border-stroke bg-transparent p-5 text-dark placeholder-dark-6 outline-hidden focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
             ></textarea>
           </div>
           <div>
@@ -42,7 +42,7 @@
               rows="5"
               name="default-textarea"
               placeholder="Placeholder"
-              class="w-full rounded-lg border border-stroke bg-transparent p-5 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+              class="w-full rounded-lg border border-stroke bg-transparent p-5 text-dark placeholder-dark-6 outline-hidden focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
             ></textarea>
             <p class="pt-2.5 text-sm text-dark-5">Helper Text</p>
           </div>
@@ -57,7 +57,7 @@
               rows="5"
               name="default-textarea"
               placeholder="Placeholder"
-              class="w-full rounded-lg border border-stroke bg-transparent p-5 text-dark placeholder-dark-6 outline-none focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
+              class="w-full rounded-lg border border-stroke bg-transparent p-5 text-dark placeholder-dark-6 outline-hidden focus:border-primary dark:border-dark-3 dark:text-white dark:placeholder-dark-5"
             ></textarea>
             <div class="flex items-center justify-between pt-2.5">
               <p class="text-sm text-dark-5">Helper Text</p>
@@ -76,7 +76,7 @@
               name="default-textarea"
               placeholder="Placeholder"
               disabled
-              class="w-full rounded-lg border border-gray-2 bg-gray-2 p-5 text-dark-6 placeholder-dark-6 outline-none dark:border-dark-3 dark:bg-dark-3 dark:placeholder-dark-5"
+              class="w-full rounded-lg border border-gray-2 bg-gray-2 p-5 text-dark-6 placeholder-dark-6 outline-hidden dark:border-dark-3 dark:bg-dark-3 dark:placeholder-dark-5"
             ></textarea>
           </div>
         </div>

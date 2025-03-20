@@ -128,7 +128,7 @@
                         class="box block h-8 w-14 rounded-full bg-dark peer-checked:bg-primary dark:bg-dark-2"
                       ></div>
                       <div
-                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full dark:bg-dark-5 peer-checked:dark:bg-white"
+                        class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full dark:bg-dark-5 dark:peer-checked:bg-white"
                       ></div>
                     </div>
                   </label>
@@ -149,10 +149,10 @@
                         class="h-5 w-14 rounded-full bg-gray-3 shadow-inner dark:bg-dark-2"
                       ></div>
                       <div
-                        class="absolute -top-1 left-0 flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-switch-1 transition peer-checked:translate-x-full dark:bg-dark-5 peer-checked:dark:bg-dark-3"
+                        class="absolute -top-1 left-0 flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-switch-1 transition peer-checked:translate-x-full dark:bg-dark-5 dark:peer-checked:bg-dark-3"
                       >
                         <span
-                          class="h-4 w-4 rounded-full bg-gray-3 group-has-[:checked]:bg-primary dark:bg-dark-2"
+                          class="h-4 w-4 rounded-full bg-gray-3 group-has-checked:bg-primary dark:bg-dark-2"
                         ></span>
                       </div>
                     </div>
@@ -213,7 +213,7 @@
                         class="peer sr-only"
                       />
                       <div
-                        class="h-5 w-14 rounded-full bg-dark shadow-inner transition peer-checked:bg-[#EAEEFB] dark:bg-dark-2 peer-checked:dark:bg-dark-3"
+                        class="h-5 w-14 rounded-full bg-dark shadow-inner transition peer-checked:bg-[#EAEEFB] dark:bg-dark-2 dark:peer-checked:bg-dark-3"
                       ></div>
                       <div
                         class="absolute -top-1 left-0 flex h-7 w-7 items-center justify-center rounded-full bg-white text-dark shadow-switch-1 transition peer-checked:translate-x-full peer-checked:bg-primary peer-checked:text-white dark:bg-dark-3"
@@ -244,7 +244,7 @@
                         class="absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition peer-checked:translate-x-full peer-checked:bg-primary dark:bg-dark-3"
                       >
                         <span
-                          class="h-3 w-3 rounded-full bg-primary group-has-[:checked]:bg-white"
+                          class="h-3 w-3 rounded-full bg-primary group-has-checked:bg-white"
                         ></span>
                       </div>
                     </div>
@@ -268,10 +268,10 @@
                       class="peer sr-only"
                     />
                     <div
-                      class="mr-2.5 flex h-5 w-5 items-center justify-center rounded border border-stroke peer-checked:border-primary peer-checked:bg-primary/10 dark:border-dark-3"
+                      class="mr-2.5 flex h-5 w-5 items-center justify-center rounded-sm border border-stroke peer-checked:border-primary peer-checked:bg-primary/10 dark:border-dark-3"
                     >
                       <span
-                        class="h-2.5 w-2.5 rounded-sm group-has-[:checked]:bg-primary"
+                        class="h-2.5 w-2.5 rounded-xs group-has-checked:bg-primary"
                       ></span>
                     </div>
                   </div>
@@ -290,9 +290,9 @@
                       class="peer sr-only"
                     />
                     <div
-                      class="mr-2.5 flex h-5 w-5 items-center justify-center rounded border border-stroke peer-checked:border-primary peer-checked:bg-primary dark:border-dark-3"
+                      class="mr-2.5 flex h-5 w-5 items-center justify-center rounded-sm border border-stroke peer-checked:border-primary peer-checked:bg-primary dark:border-dark-3"
                     >
-                      <span class="opacity-0 group-has-[:checked]:opacity-100">
+                      <span class="opacity-0 group-has-checked:opacity-100">
                         <svg
                           width="11"
                           height="8"
@@ -325,10 +325,10 @@
                       class="peer sr-only"
                     />
                     <div
-                      class="mr-2.5 flex h-5 w-5 items-center justify-center rounded border border-stroke peer-checked:border-primary peer-checked:bg-primary/10 dark:border-dark-3"
+                      class="mr-2.5 flex h-5 w-5 items-center justify-center rounded-sm border border-stroke peer-checked:border-primary peer-checked:bg-primary/10 dark:border-dark-3"
                     >
                       <span
-                        class="text-primary opacity-0 group-has-[:checked]:opacity-100"
+                        class="text-primary opacity-0 group-has-checked:opacity-100"
                       >
                         <svg
                           class="h-[14px] w-[14px] stroke-current"
@@ -364,7 +364,7 @@
                       class="mr-2.5 flex h-5 w-5 items-center justify-center rounded-full border border-stroke peer-checked:border-primary peer-checked:bg-primary/10 dark:border-dark-3"
                     >
                       <span
-                        class="block h-2.5 w-2.5 rounded-full bg-transparent group-has-[:checked]:bg-primary"
+                        class="block h-2.5 w-2.5 rounded-full bg-transparent group-has-checked:bg-primary"
                       >
                       </span>
                     </div>
@@ -435,7 +435,7 @@
                   class="sr-only"
                 />
                 <span
-                  class="light flex items-center space-x-[6px] rounded bg-gray px-[18px] py-2 text-sm font-medium text-primary dark:bg-dark-3"
+                  class="light flex items-center space-x-[6px] rounded-sm bg-gray px-[18px] py-2 text-sm font-medium text-primary dark:bg-dark-3"
                 >
                   <svg
                     width="16"
@@ -459,7 +459,7 @@
                   Light Mode
                 </span>
                 <span
-                  class="dark flex items-center space-x-[6px] rounded px-[18px] py-2 text-sm font-medium text-body-color"
+                  class="dark flex items-center space-x-[6px] rounded-sm px-[18px] py-2 text-sm font-medium text-body-color"
                 >
                   <svg
                     width="16"
@@ -531,7 +531,7 @@
                   class="flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white shadow-two dark:bg-dark-2"
                 >
                   <span
-                    class="light flex h-9 w-9 items-center justify-center rounded bg-primary text-white"
+                    class="light flex h-9 w-9 items-center justify-center rounded-sm bg-primary text-white"
                   >
                     <svg
                       width="16"
@@ -556,7 +556,7 @@
                     </svg>
                   </span>
                   <span
-                    class="dark flex h-9 w-9 items-center justify-center rounded text-body-color"
+                    class="dark flex h-9 w-9 items-center justify-center rounded-sm text-body-color"
                   >
                     <svg
                       width="16"

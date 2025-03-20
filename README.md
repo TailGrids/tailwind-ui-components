@@ -30,14 +30,10 @@ Ensure you've installed [Node.js](https://nodejs.org) and [Tailwind CSS](https:/
 ```bash
 npm i tailgrids
 ```
-**2. Add the TailGrids plugin to your `tailwind.config.js` file:**
+**2. Add the TailGrids plugin to your `css` file:**
 
-```javascript
-module.exports = {
-  // Your existing Tailwind CSS configuration goes here
-
-  plugins: [require("tailgrids/plugin")],
-};
+```css
+@plugin 'tailgrids/plugin'
 ```
 **3. [Browse the components](https://tailgrids.com/components) and simply copy and paste the ones you like into your projects.**
 
@@ -60,6 +56,12 @@ You can always support this project and inspire us by [Starring🌟 This Reposit
 and sharing with friends. If you like the the library consider purchasing the [Pro version](https://tailgrids.com/pricing)
 
 ## Changelog
+
+### Version 2.2.1
+(Mar, 2025)
+
+- Updated to Tailwind CSS v4
+
 
 ### Version 2.2.1
 (Aug, 2024)
