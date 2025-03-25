@@ -57,7 +57,7 @@ and sharing with friends. If you like the the library consider purchasing the [P
 
 ## Changelog
 
-### Version 2.2.1
+### Version 2.3.0
 (Mar, 2025)
 
 - Updated to Tailwind CSS v4
